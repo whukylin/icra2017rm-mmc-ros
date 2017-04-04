@@ -41,7 +41,7 @@ VirtualRC_t vrc;
   
 void cmdCallback(const kylinbot_core::Kylin::ConstPtr& kylin)
 {
-  if (FIFO_GetFree(&tx_fifo) < msg_head_kylin.attr.length + MSG_LEN_EXT) {
+  if (FIFO_GetFree(&tx_fifo) >= msg_head_kylin.attr.length + MSG_LEN_EXT) {
     
     kylinMsg.frame_id++;
     kylinMsg.cbus.cp.x = kylin->cbus.px;
@@ -64,7 +64,7 @@ void cmdCallback(const kylinbot_core::Kylin::ConstPtr& kylin)
 
 void vrcCallback(const kylinbot_core::VirtualRC::ConstPtr& virtualRC)
 {
-  if (FIFO_GetFree(&tx_fifo) < msg_head_vrc.attr.length + MSG_LEN_EXT) {
+  if (FIFO_GetFree(&tx_fifo) >= msg_head_vrc.attr.length + MSG_LEN_EXT) {
     
     vrc.frame_id++;
     
@@ -104,7 +104,7 @@ int main(int argc, char **argv)
   ros::Subscriber kylin_sub = n.subscribe<kylinbot_core::Kylin>("cmd", 1000, cmdCallback); // Command listenner
   ros::Subscriber vrc_sub = n.subscribe<kylinbot_core::VirtualRC>("vrc", 1000, vrcCallback); // Virtual RC listenner
 
-  ros::Rate rate(50);
+  ros::Rate rate(100);
 
   while (ros::ok())
   {

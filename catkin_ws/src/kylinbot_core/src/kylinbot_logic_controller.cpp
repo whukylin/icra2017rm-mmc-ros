@@ -53,7 +53,7 @@ int main(int argc, char **argv)
   ros::Publisher cmd_pub = n.advertise<kylinbot_core::Kylin>("cmd", 1000); // Command advertiser
   ros::Publisher vrc_pub = n.advertise<kylinbot_core::VirtualRC>("vrc", 1000); // Virtual RC advertiser
 
-  ros::Rate rate(50);
+  ros::Rate rate(100);
 
   while (ros::ok())
   {

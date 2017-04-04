@@ -124,8 +124,8 @@ void publishOdomeMsg(ros::Publisher *pub, const KylinMsg_t* kylinMsg)
   odom_trans.header.frame_id = "odom";
   odom_trans.child_frame_id = "base_link";
 
-  odom_trans.transform.translation.x = px;
-  odom_trans.transform.translation.y = py;
+  odom_trans.transform.translation.x = 0.0;
+  odom_trans.transform.translation.y = 0.0;
   odom_trans.transform.translation.z = 0.0;
   odom_trans.transform.rotation = odom_quat;
 
