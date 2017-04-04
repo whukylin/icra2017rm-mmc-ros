@@ -1,0 +1,2 @@
+set(kylinbot_core_MESSAGE_FILES "/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/msg/CBUS.msg;/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/msg/Kylin.msg;/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/msg/PosCalib.msg;/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/msg/Sonar.msg;/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg;/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/msg/ZGyro.msg")
+set(kylinbot_core_SERVICE_FILES "")
