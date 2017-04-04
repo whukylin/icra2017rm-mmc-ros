@@ -1,5 +1,5 @@
 [Buildset]
-BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x10\x00K\x00y\x00l\x00i\x00n\x00R\x00O\x00S)
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
 
 [CMake]
 Build Directory Count=1
@@ -18,3 +18,6 @@ Install Directory=
 Name=GCC
 Path=gcc
 Type=GCC
+
+[Project]
+VersionControlSupport=kdevgit

@@ -1,16 +1,25 @@
-//
-// Created by kelfor on 3/27/17.
-//
-#include "ros/ros.h"
-#include "std_msgs/Int16.h"      //builtin_int16.h"
-#include <std_msgs/Bool.h>
-#include "RMVideoCapture.hpp"
-#include<geometry_msgs/Twist.h>
 
+/**
+ * Copyright (c) 2016, Jack Mo (mobangjack@foxmail.com).
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-//#define _SHOW_PHOTO
-//#define _SHOW_OUTPUT
-//#define Camera_One
+#include "MarkerDetection.h"
+#include <opencv2/opencv.hpp>
+
+#include stdio.h>
+#include <iostream>
 
 using namespace cv;
 
@@ -34,24 +43,6 @@ double tx,ty,tz;
 
     
 int detection_mode=0;   //detect squares or only blue area. 0: square 1: blue area
-
-class MyPoint
-{
-public:
-    MyPoint(Point pnt)
-    {
-        x=pnt.x;
-        y=pnt.y;
-    };
-    int x;
-    int y;
-    bool operator<(const MyPoint&p)const
-    {
-        return x<p.x;
-    }
-};
-
-
 
 /*
 //for 640*480
@@ -91,7 +82,6 @@ void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_
 int Color_judge(Mat &src,int area);
 void Sort_rect(vector<Point>& approx);
 
-
 static double angle( Point pt1, Point pt2, Point pt0 )
 {
     double dx1 = pt1.x - pt0.x;
@@ -101,12 +91,13 @@ static double angle( Point pt1, Point pt2, Point pt0 )
     return (dx1*dx2 + dy1*dy2)/sqrt((dx1*dx1 + dy1*dy1)*(dx2*dx2 + dy2*dy2) + 1e-10);
 }
 
-static void findSquares( Mat src,const Mat& image, vector<vector<Point> >& squares )
+static void findSquares( Mat src,const Mat& image, vector<vector<Point>>& squares )
 {
     Mat pyr, timg, gray0(image.size(), CV_8U),Src_HSV(image.size(), CV_8U), gray;
 
     pyrDown(image, pyr, Size(image.cols/2, image.rows/2));
     pyrUp(pyr, timg, image.size());
+	
     vector<vector<Point> > contours;
 
     int counts=0,counts_2=0,counts_3=0;
@@ -114,29 +105,7 @@ static void findSquares( Mat src,const Mat& image, vector<vector<Point> >& squar
     vector<vector<Point> > rect_2;
     vector<vector<Point> > rect_3;
     vector<vector<Point> > out;
-    //vector<Mat> channels;
-    /*
-	cvtColor( timg, Src_HSV, CV_BGR2HSV);
-    split(Src_HSV,channels);
 
-
-    Mat H=channels.at(0);
-    cout<<"H="<<(int)H.at<uchar>(50,50)<<endl;
-    Mat S=channels.at(1);
-    cout<<"S="<<(int)S.at<uchar>(50,50)<<endl;
-    Mat V=channels.at(2);
-    cout<<"V="<<(int)V.at<uchar>(50,50)<<"size="<<V.size()<<endl;
-    Mat V0(H.size(),CV_8U,Scalar::all(150));
-    //nomalizationdouble ry,rz,rx;
-double tx,ty,tz;
-    channels.at(0)=H*150/V;
-
-    channels.at(1)=S*150/V;
-    channels.at(2)=V0;
-    cout<<"V0="<<V0.size()<<endl;
-    //merge(channels,Src_HSV);
-    //cvtColor(Src_HSV,timg, CV_HSV2BGR);
-   */
     cout<<"find squares src.chan="<<src.channels()<<endl;
     cvtColor( src, gray0, CV_BGR2GRAY);
 
@@ -291,6 +260,7 @@ double tx,ty,tz;
         }
     }
 }
+
 static void drawSquares( Mat& image, const vector<vector<Point> >& squares )
 {
     for( size_t i = 0; i < squares.size(); i++ )
@@ -532,6 +502,7 @@ int Color_judge(Mat &src,int area)
         return 0;
 
 }
+
 void Sort_rect(vector<Point>& approx)
 {
     Point tl,tr,br,bl;
@@ -578,172 +549,8 @@ void Sort_rect(vector<Point>& approx)
 #endif
 }
 
-
-
-void detectionModeCallback(const std_msgs::Int16 & mode)
+bool MarkerDetecter::locateMarker(cv::Mat& img, Viz_t& viz)
 {
-	detection_mode = mode.data;
+	return false;
 }
 
-
-void on_expTracker(int,void *)
-{
-    capture.setExposureTime(0, ::exp_time);//settings->exposure_time);
-}
-void on_gainTracker(int,void *)
-{
-    capture.setpara(gain,brightness_,whiteness_,saturation_);// cap.setExposureTime(0, ::exp_time);//settings->exposure_time);
-}
-void on_brightnessTracker(int,void*)
-{
-    capture.setpara(gain,brightness_,whiteness_,saturation_);//cap.setExposureTime(0, ::exp_time);//settings->exposure_time);
-}
-void on_whitenessTracker(int,void*)
-{
-    capture.setpara(gain,brightness_,whiteness_,saturation_);// cap.setExposureTime(0, ::exp_time);//settings->exposure_time);
-}
-void on_saturationTracker(int,void*)
-{
-    capture.setpara(gain,brightness_,whiteness_,saturation_);//cap.setExposureTime(0, ::exp_time);//settings->exposure_time);
-}
-int main(int argc, char** argv)
-{
-
-    ros::init(argc,argv,"marker_detection");
-
-    ros::NodeHandle n;
-
-    ros::Rate r(100);
-
-    ros::Publisher pub = n.advertise<geometry_msgs::Twist>("kylinbot/cmd_vel",100);//.h>
-	ros::Publisher pub_lostFlag = n.advertise<std_msgs::Bool>("kylinbot/lostCubeSquare",10);//Publish the flag for losing the square or not
-	ros::Subscriber sub_detectionMode = n.subscribe("kylinbot/detectioMode",100,detectionModeCallback);
-
-#ifdef _SHOW_PHOTO
-    namedWindow( wndname, 1 );
-#endif
-    //RMVideoCapture capture("/dev/video0", 3);
-    capture.setVideoFormat(800, 600, 1);
-    // capture.setExposureTime(0, 62);//settings->exposure_time);
-
-    //RMVideoCapture cap("/dev/video0", 3);
-    createTrackbar("exposure_time",wndname,&::exp_time,100,on_expTracker);
-    createTrackbar("gain",wndname,&::gain,100,on_gainTracker);
-    createTrackbar("whiteness",wndname,&::whiteness_,100,on_whitenessTracker);
-    createTrackbar("brightness_",wndname,&::brightness_,100,on_brightnessTracker);
-    createTrackbar("saturation",wndname,&::saturation_,100,on_saturationTracker);
-    on_brightnessTracker(0,0);
-    on_expTracker(0,0);
-    on_gainTracker(0,0);
-    on_saturationTracker(0,0);
-    on_whitenessTracker(0,0);
-
-
-
-    geometry_msgs::Twist cmd_vel;
-
-    if(!capture.startStream())
-    {
-        cout<<"Open Camera failure.\n";
-        return 1;
-    }
-
-    Mat frame;
-    vector<vector<Point> > squares;
-
-    while (ros::ok())//&&(capture.read(frame)))
-    {
-
-        squares.clear(); 
-        double t = (double)getTickCount();
-
-        capture >> frame;
-        //cout<<"IN"<<endl;
-        if (frame.empty())
-            continue;
-
-        int lostCount = 0;
-        Mat src=frame.clone();
-		if(detection_mode==0)  //detect square
-		{
-			findSquares(src,frame, squares);
-			LocationMarkes(squares);
-			drawSquares(frame, squares); 
-			/*****************************/
-			/*******send the object position to ARM*********/
-			/***********************************************/
-			//imshow(wndname, frame);
-			int c = waitKey(1);
-			
-			t = ((double)getTickCount() - t)/getTickFrequency();
-			cout<<"time: "<<t<<" second"<<endl;
-			
-			if((char)c == 'q')
-				break;
-			
-			if(squares.size() > 0)
-			{
-				lostCount = 0;
-			}
-			
-			
-			if (squares.size() == 0)
-			{
-				lostCount++;
-				if(lostCount >= 3)
-				{
-					lostCount = 0;
-					tx = 0;
-					ty = 0;
-					tz = 0;
-					rx = 0;
-					ry = 0;
-					rz = 0;
-				}
-				
-			}
-			
-			//TODO: publish cmd_vel topic messages
-			//
-			cmd_vel.linear.x = tx;
-			cmd_vel.linear.y = ty;
-			cmd_vel.linear.z = tz;
-			cmd_vel.angular.x = rx;
-			cmd_vel.angular.y = ry;
-			cmd_vel.angular.z = rz;
-		}
-		else    //detect blue area
-		{
-			int dif_x=0, dif_y=0;
-			Color_detect(src,dif_x, dif_y);
-			cmd_vel.linear.x = 10*dif_x;
-			cmd_vel.linear.y = 10*dif_y;
-			cmd_vel.linear.z = 100; 
-		}
-
-
-        pub.publish(cmd_vel);
-//        txKylinMsg.cp.x = tx;
-//        txKylinMsg.cv.x = 1000;
-//        txKylinMsg.cp.y = tz;
-//        txKylinMsg.cv.y = 1000;
-//        txKylinMsg.cp.z = ry;
-//        txKylinMsg.cv.z = 1000;
-//        txKylinMsg.gp.e = ty;
-//        txKylinMsg.gv.e = 1000;
-
-        if (abs(tx) < 100 && abs(ty) < 100 && abs(tz) < 100) {
-            //txKylinMsg.gp.c = 2199;
-            //txKylinMsg.gv.c = 4000;
-        } else {
-            //txKylinMsg.gp.c = 314;
-            //txKylinMsg.gv.c = 4000;
-        }
-        ros::spinOnce();
-        r.sleep();
-
-    }
-    //capture.closeStream();
-
-    return 0;
-}
