@@ -66,7 +66,7 @@ int16 ch
     """
     try:
       _x = self
-      buff.write(_get_struct_I4h().pack(_x.frame_id, _x.el, _x.eh, _x.cl, _x.ch))
+      buff.write(_struct_I4h.pack(_x.frame_id, _x.el, _x.eh, _x.cl, _x.ch))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -80,7 +80,7 @@ int16 ch
       _x = self
       start = end
       end += 12
-      (_x.frame_id, _x.el, _x.eh, _x.cl, _x.ch,) = _get_struct_I4h().unpack(str[start:end])
+      (_x.frame_id, _x.el, _x.eh, _x.cl, _x.ch,) = _struct_I4h.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -94,7 +94,7 @@ int16 ch
     """
     try:
       _x = self
-      buff.write(_get_struct_I4h().pack(_x.frame_id, _x.el, _x.eh, _x.cl, _x.ch))
+      buff.write(_struct_I4h.pack(_x.frame_id, _x.el, _x.eh, _x.cl, _x.ch))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -109,18 +109,10 @@ int16 ch
       _x = self
       start = end
       end += 12
-      (_x.frame_id, _x.el, _x.eh, _x.cl, _x.ch,) = _get_struct_I4h().unpack(str[start:end])
+      (_x.frame_id, _x.el, _x.eh, _x.cl, _x.ch,) = _struct_I4h.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-def _get_struct_I():
-    global _struct_I
-    return _struct_I
-_struct_I4h = None
-def _get_struct_I4h():
-    global _struct_I4h
-    if _struct_I4h is None:
-        _struct_I4h = struct.Struct("<I4h")
-    return _struct_I4h
+_struct_I4h = struct.Struct("<I4h")

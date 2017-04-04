@@ -207,7 +207,7 @@ set(CMAKE_BUILD_TYPE Release)
 FILE(GLOB sourcefiles "src/asp/src/*.c" "src/uart/src/*.cpp")
 include_directories(/usr/loca/include include include/asp/inc include/uart/inc ${catkin_INCLUDE_DIRS})
 
-link_directories(/usr/local/lib /opt/ros/kinetic/lib)
+link_directories(/usr/local/lib /opt/ros/indigo/lib)
 
 add_executable(kylinbot_msg_puller ${sourcefiles} src/kylinbot_msg_puller.cpp)
 target_link_libraries(kylinbot_msg_puller  ${catkin_LIBRARIES} tf)

@@ -91,14 +91,14 @@ void publishCalibMsg(ros::Publisher *pub, const PosCalibMsg_t* calibMsg)
   pub->publish(calib);
 }
 
-void publishVirtualRC(ros::Publisher *pub, const VirtualRC_t* vrc)
+void publishVirtualRC(ros::Publisher *pub, const VirtualRC_t* rcf)
 {
   kylinbot_core::VirtualRC virtualRC;
   
-  virtualRC.frame_id = vrc->frame_id;
+  virtualRC.frame_id = rcf->frame_id;
   
   for (int i = 0; i < 6; i++) {
-    virtualRC.data[i] = vrc->buf[i];
+    virtualRC.data[i] = rcf->buf[i];
   }
   
   pub->publish(virtualRC);
@@ -108,10 +108,10 @@ void publishOdomeMsg(ros::Publisher *pub, const KylinMsg_t* kylinMsg)
 {
   float px = kylinMsg->cbus.cp.x / KYLIN_MSG_VALUE_SCALE;
   float py = kylinMsg->cbus.cp.y / KYLIN_MSG_VALUE_SCALE;
-  float pz = kylinMsg->cbus.cp.z / KYLIN_MSG_VALUE_SCALE* 180 / PI; // rad to deg
+  float pz = kylinMsg->cbus.cp.z / KYLIN_MSG_VALUE_SCALE; // rad to deg
   float vx = kylinMsg->cbus.cv.x / KYLIN_MSG_VALUE_SCALE;
   float vy = kylinMsg->cbus.cv.y / KYLIN_MSG_VALUE_SCALE;
-  float vz = kylinMsg->cbus.cv.z / KYLIN_MSG_VALUE_SCALE* 180 / PI; // rad/s to deg/s
+  float vz = kylinMsg->cbus.cv.z / KYLIN_MSG_VALUE_SCALE; // rad/s to deg/s
   
   tf::TransformBroadcaster odom_broadcaster;
   
@@ -164,7 +164,7 @@ int main(int argc, char **argv)
   ZGyroMsg_t zgyroMsg;
   PosCalibMsg_t posCalibMsg;
   Sr04sMsg_t sr04sMsg;
-  VirtualRC_t vrc;
+  VirtualRC_t rcf;
   
   FIFO_Init(&rx_fifo, rx_buf[0], BUF_LEN);
   
@@ -194,11 +194,11 @@ int main(int argc, char **argv)
   
   ros::Publisher odom_pub = n.advertise<nav_msgs::Odometry>("odom", 1000); // Built-in odom
 
-  ros::Rate rate(50);
+  ros::Rate rate(100);
 
   while (ros::ok())
   {
-
+	
     ros::spinOnce();
 
     // Get fifo free space
@@ -237,8 +237,8 @@ int main(int argc, char **argv)
       publishCalibMsg(&calib_pub, &posCalibMsg);
     }
 
-    if (Msg_Pop(&rx_fifo, rx_buf[1], &msg_head_vrc, &vrc)) {
-      publishVirtualRC(&rcf_pub, &vrc);
+    if (Msg_Pop(&rx_fifo, rx_buf[1], &msg_head_vrc, &rcf)) {
+      publishVirtualRC(&rcf_pub, &rcf);
     }
 
     rate.sleep();

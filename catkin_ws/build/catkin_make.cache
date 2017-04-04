@@ -1,2 +1,2 @@
 kylinbot_core
--DCATKIN_DEVEL_PREFIX=/home/bj/workspace/ros/KylinROS/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bj/workspace/ros/KylinROS/catkin_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/install -G Unix Makefiles

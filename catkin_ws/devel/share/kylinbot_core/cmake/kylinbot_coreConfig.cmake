@@ -67,14 +67,14 @@ set(kylinbot_core_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(kylinbot_core_SOURCE_PREFIX /home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core)
-  set(kylinbot_core_DEVEL_PREFIX /home/bj/workspace/ros/KylinROS/catkin_ws/devel)
+  set(kylinbot_core_SOURCE_PREFIX /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core)
+  set(kylinbot_core_DEVEL_PREFIX /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel)
   set(kylinbot_core_INSTALL_PREFIX "")
   set(kylinbot_core_PREFIX ${kylinbot_core_DEVEL_PREFIX})
 else()
   set(kylinbot_core_SOURCE_PREFIX "")
   set(kylinbot_core_DEVEL_PREFIX "")
-  set(kylinbot_core_INSTALL_PREFIX /home/bj/workspace/ros/KylinROS/catkin_ws/install)
+  set(kylinbot_core_INSTALL_PREFIX /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/install)
   set(kylinbot_core_PREFIX ${kylinbot_core_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(kylinbot_core_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/bj/workspace/ros/KylinROS/catkin_ws/devel/include;/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/include " STREQUAL " ")
+if(NOT "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include;/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include " STREQUAL " ")
   set(kylinbot_core_INCLUDE_DIRS "")
-  set(_include_dirs "/home/bj/workspace/ros/KylinROS/catkin_ws/devel/include;/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/include")
+  set(_include_dirs "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include;/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -103,7 +103,7 @@ if(NOT "/home/bj/workspace/ros/KylinROS/catkin_ws/devel/include;/home/bj/workspa
         message(FATAL_ERROR "Project 'kylinbot_core' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'bj <mobangjack@foxmail.com>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'kylinbot_core' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/bj/workspace/ros/KylinROS/catkin_ws/src/kylinbot_core/${idir}'.  Ask the maintainer 'bj <mobangjack@foxmail.com>' to fix it.")
+      message(FATAL_ERROR "Project 'kylinbot_core' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/${idir}'.  Ask the maintainer 'bj <mobangjack@foxmail.com>' to fix it.")
     endif()
     _list_append_unique(kylinbot_core_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/bj/workspace/ros/KylinROS/catkin_ws/devel/lib;/home/bj/workspace/ros/KylinROS/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(kylinbot_core_EXPORTED_TARGETS "kylinbot_core_generate_messages_cpp;kylinbot_core_generate_messages_eus;kylinbot_core_generate_messages_lisp;kylinbot_core_generate_messages_nodejs;kylinbot_core_generate_messages_py")
+set(kylinbot_core_EXPORTED_TARGETS "kylinbot_core_generate_messages_cpp;kylinbot_core_generate_messages_lisp;kylinbot_core_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${kylinbot_core_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -162,12 +162,12 @@ foreach(depend ${depends})
   if(${count} EQUAL 1)
     # simple dependencies must only be find_package()-ed once
     if(NOT ${kylinbot_core_dep}_FOUND)
-      find_package(${kylinbot_core_dep} REQUIRED NO_MODULE)
+      find_package(${kylinbot_core_dep} REQUIRED)
     endif()
   else()
     # dependencies with components must be find_package()-ed again
     list(REMOVE_AT depend_list 0)
-    find_package(${kylinbot_core_dep} REQUIRED NO_MODULE ${depend_list})
+    find_package(${kylinbot_core_dep} REQUIRED ${depend_list})
   endif()
   _list_append_unique(kylinbot_core_INCLUDE_DIRS ${${kylinbot_core_dep}_INCLUDE_DIRS})
 

@@ -58,7 +58,7 @@ int16 rate
     """
     try:
       _x = self
-      buff.write(_get_struct_Iih().pack(_x.frame_id, _x.angle, _x.rate))
+      buff.write(_struct_Iih.pack(_x.frame_id, _x.angle, _x.rate))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -72,7 +72,7 @@ int16 rate
       _x = self
       start = end
       end += 10
-      (_x.frame_id, _x.angle, _x.rate,) = _get_struct_Iih().unpack(str[start:end])
+      (_x.frame_id, _x.angle, _x.rate,) = _struct_Iih.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -86,7 +86,7 @@ int16 rate
     """
     try:
       _x = self
-      buff.write(_get_struct_Iih().pack(_x.frame_id, _x.angle, _x.rate))
+      buff.write(_struct_Iih.pack(_x.frame_id, _x.angle, _x.rate))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -101,18 +101,10 @@ int16 rate
       _x = self
       start = end
       end += 10
-      (_x.frame_id, _x.angle, _x.rate,) = _get_struct_Iih().unpack(str[start:end])
+      (_x.frame_id, _x.angle, _x.rate,) = _struct_Iih.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-def _get_struct_I():
-    global _struct_I
-    return _struct_I
-_struct_Iih = None
-def _get_struct_Iih():
-    global _struct_Iih
-    if _struct_Iih is None:
-        _struct_Iih = struct.Struct("<Iih")
-    return _struct_Iih
+_struct_Iih = struct.Struct("<Iih")

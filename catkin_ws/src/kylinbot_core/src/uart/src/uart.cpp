@@ -150,36 +150,34 @@ int uart_config(int fd, int speed, int databits, char parity, int stopbits)
 
 int uart_read(int fd, uint8_t* data, uint32_t len)
 {
-  int i = 0;
-  int r = 0;
-  for (i = 0; i < len; i++)
+  int n = 0;
+  while (n < len)
   {
-    int n = read(fd, data + i, len - i);
-    if (n < 0 )
+    int r = read(fd, data + n, len - n);
+    if (r < 0 )
     {
       break;
     }
-    r += i;
+    n += r;
   }
 
-  return r;
+  return n;
 }
 
 int uart_write(int fd, const uint8_t* data, uint32_t len)
 {
-  uint32_t i = 0;
-  uint32_t w = 0;
-  for(i = 0; i < len; i++)
+  int n = 0;
+  while (n < len)
   {
-    int n = write(fd, data + i, len - i);
-    if (n < 0)
+    int w = write(fd, data + n, len - n);
+    if (w < 0 )
     {
       break;
     }
-    w += n;
+    n += w;
   }
-  
-  return w;
+
+  return n;
 }
 
 int uart_close(int fd)

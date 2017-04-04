@@ -66,7 +66,7 @@ uint16 right
     """
     try:
       _x = self
-      buff.write(_get_struct_I4H().pack(_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right))
+      buff.write(_struct_I4H.pack(_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -80,7 +80,7 @@ uint16 right
       _x = self
       start = end
       end += 12
-      (_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right,) = _get_struct_I4H().unpack(str[start:end])
+      (_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right,) = _struct_I4H.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -94,7 +94,7 @@ uint16 right
     """
     try:
       _x = self
-      buff.write(_get_struct_I4H().pack(_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right))
+      buff.write(_struct_I4H.pack(_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -109,18 +109,10 @@ uint16 right
       _x = self
       start = end
       end += 12
-      (_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right,) = _get_struct_I4H().unpack(str[start:end])
+      (_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right,) = _struct_I4H.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-def _get_struct_I():
-    global _struct_I
-    return _struct_I
-_struct_I4H = None
-def _get_struct_I4H():
-    global _struct_I4H
-    if _struct_I4H is None:
-        _struct_I4H = struct.Struct("<I4H")
-    return _struct_I4H
+_struct_I4H = struct.Struct("<I4H")

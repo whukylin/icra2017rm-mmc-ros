@@ -1,0 +1,16 @@
+<launch>
+
+  <node name="kylinbot_msg_puller"  pkg="kylinbot_core"  type="kylinbot_msg_puller" output="screen">
+  <param name="serial_port"         type="string" value="/dev/ttyTHS2"/>  
+  <param name="serial_baudrate"     type="int"    value="115200"/>
+  </node>
+
+  <node name="kylinbot_msg_pusher"  pkg="kylinbot_core"  type="kylinbot_msg_pusher" output="screen">
+  <param name="serial_port"         type="string" value="/dev/ttyUSB0"/>  
+  <param name="serial_baudrate"     type="int"    value="115200"/>
+  </node>
+
+  <node name="kylinbot_logic_controller"  pkg="kylinbot_core"  type="kylinbot_logic_controller" output="screen">
+  </node>
+
+</launch>

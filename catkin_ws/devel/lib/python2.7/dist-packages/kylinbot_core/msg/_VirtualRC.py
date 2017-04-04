@@ -36,10 +36,10 @@ uint8[6] data
       if self.frame_id is None:
         self.frame_id = 0
       if self.data is None:
-        self.data = b'\0'*6
+        self.data = chr(0)*6
     else:
       self.frame_id = 0
-      self.data = b'\0'*6
+      self.data = chr(0)*6
 
   def _get_types(self):
     """
@@ -53,13 +53,13 @@ uint8[6] data
     :param buff: buffer, ``StringIO``
     """
     try:
-      buff.write(_get_struct_I().pack(self.frame_id))
+      buff.write(_struct_I.pack(self.frame_id))
       _x = self.data
       # - if encoded as a list instead, serialize as bytes instead of string
       if type(_x) in [list, tuple]:
-        buff.write(_get_struct_6B().pack(*_x))
+        buff.write(_struct_6B.pack(*_x))
       else:
-        buff.write(_get_struct_6s().pack(_x))
+        buff.write(_struct_6s.pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -72,7 +72,7 @@ uint8[6] data
       end = 0
       start = end
       end += 4
-      (self.frame_id,) = _get_struct_I().unpack(str[start:end])
+      (self.frame_id,) = _struct_I.unpack(str[start:end])
       start = end
       end += 6
       self.data = str[start:end]
@@ -88,13 +88,13 @@ uint8[6] data
     :param numpy: numpy python module
     """
     try:
-      buff.write(_get_struct_I().pack(self.frame_id))
+      buff.write(_struct_I.pack(self.frame_id))
       _x = self.data
       # - if encoded as a list instead, serialize as bytes instead of string
       if type(_x) in [list, tuple]:
-        buff.write(_get_struct_6B().pack(*_x))
+        buff.write(_struct_6B.pack(*_x))
       else:
-        buff.write(_get_struct_6s().pack(_x))
+        buff.write(_struct_6s.pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -108,7 +108,7 @@ uint8[6] data
       end = 0
       start = end
       end += 4
-      (self.frame_id,) = _get_struct_I().unpack(str[start:end])
+      (self.frame_id,) = _struct_I.unpack(str[start:end])
       start = end
       end += 6
       self.data = str[start:end]
@@ -117,18 +117,5 @@ uint8[6] data
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-def _get_struct_I():
-    global _struct_I
-    return _struct_I
-_struct_6B = None
-def _get_struct_6B():
-    global _struct_6B
-    if _struct_6B is None:
-        _struct_6B = struct.Struct("<6B")
-    return _struct_6B
-_struct_6s = None
-def _get_struct_6s():
-    global _struct_6s
-    if _struct_6s is None:
-        _struct_6s = struct.Struct("<6s")
-    return _struct_6s
+_struct_6B = struct.Struct("<6B")
+_struct_6s = struct.Struct("<6s")

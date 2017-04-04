@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/bj/workspace/ros/KylinROS/catkin_ws/build"
+export CMAKE_PREFIX_PATH="/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src:$ROS_PACKAGE_PATH"

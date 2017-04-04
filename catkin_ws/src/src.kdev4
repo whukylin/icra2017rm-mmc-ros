@@ -1,0 +1,3 @@
+[Project]
+Manager=KDevCMakeManager
+Name=icra2017rm-mmc-ros

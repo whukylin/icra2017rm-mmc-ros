@@ -48,7 +48,7 @@ int main(int argc, char **argv)
   ros::NodeHandle n;
 
   ros::Subscriber odo_sub = n.subscribe<kylinbot_core::Kylin>("odo", 1000, odoCallback); // Odometry feedback listenner
-  ros::Subscriber rcf_sub = n.subscribe<kylinbot_core::VirtualRC>("rc", 1000, rcfCallback); // RC feedback listenner
+  ros::Subscriber rcf_sub = n.subscribe<kylinbot_core::VirtualRC>("rcf", 1000, rcfCallback); // RC feedback listenner
   
   ros::Publisher cmd_pub = n.advertise<kylinbot_core::Kylin>("cmd", 1000); // Command advertiser
   ros::Publisher vrc_pub = n.advertise<kylinbot_core::VirtualRC>("vrc", 1000); // Virtual RC advertiser
