@@ -87,11 +87,13 @@ int main(int argc, char **argv)
 
   std::string serial_port;
   int serial_baudrate = 115200;
-
+  int spin_rate = 100;
+  
   ros::NodeHandle np("~");
   np.param<std::string>("serial_port", serial_port, "/dev/ttyTHS2"); 
   np.param<int>("serial_baudrate", serial_baudrate, 115200);
-
+  np.param<int>("spin_rate", spin_rate, 100); 
+  
   int ret = uart_open(&uart_fd, serial_port.c_str(), serial_baudrate, UART_OFLAG_WR);
   if (ret < 0) {
     fprintf(stderr, "Error, cannot bind to the specified serial port %s.\n"
@@ -104,7 +106,7 @@ int main(int argc, char **argv)
   ros::Subscriber kylin_sub = n.subscribe<kylinbot_core::Kylin>("cmd", 1000, cmdCallback); // Command listenner
   ros::Subscriber vrc_sub = n.subscribe<kylinbot_core::VirtualRC>("vrc", 1000, vrcCallback); // Virtual RC listenner
 
-  ros::Rate rate(100);
+  ros::Rate rate(spin_rate);
 
   while (ros::ok())
   {

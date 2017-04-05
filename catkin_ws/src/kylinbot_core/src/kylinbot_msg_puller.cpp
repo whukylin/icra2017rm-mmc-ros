@@ -172,10 +172,12 @@ int main(int argc, char **argv)
 
   std::string serial_port;
   int serial_baudrate = 115200;
-
+  int spin_rate = 100;
+  
   ros::NodeHandle np("~");
   np.param<std::string>("serial_port", serial_port, "/dev/ttyTHS2"); 
-  np.param<int>("serial_baudrate", serial_baudrate, 115200); 
+  np.param<int>("serial_baudrate", serial_baudrate, 115200);
+  np.param<int>("spin_rate", spin_rate, 100); 
 
   int ret = uart_open(&uart_fd, serial_port.c_str(), serial_baudrate, UART_OFLAG_RD);
   if (ret < 0) {
@@ -194,7 +196,7 @@ int main(int argc, char **argv)
   
   ros::Publisher odom_pub = n.advertise<nav_msgs::Odometry>("odom", 1000); // Built-in odom
 
-  ros::Rate rate(100);
+  ros::Rate rate(spin_rate);
 
   while (ros::ok())
   {

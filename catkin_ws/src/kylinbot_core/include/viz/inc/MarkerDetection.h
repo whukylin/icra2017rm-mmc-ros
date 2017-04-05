@@ -1,4 +1,3 @@
-
 /**
  * Copyright (c) 2016, Jack Mo (mobangjack@foxmail.com).
  *
@@ -19,7 +18,7 @@
 #define __MARKER_DETECTION_H__
 
 #include <opencv2/opencv.hpp>
-// 
+
 typedef struct
 {
 	float x;
@@ -38,7 +37,10 @@ class MarkerDetecter
 public:
 	MarkerDetecter();
 	~MarkerDetecter();
+	bool detectMarker(cv::Mat& img, std::vector<std::vector<cv::Point>> squares);
 	bool locateMarker(cv::Mat& img, Viz_t& viz);
+	
+protected:
 	std::vector<std::vector<cv::Point>> squares;
 }
 

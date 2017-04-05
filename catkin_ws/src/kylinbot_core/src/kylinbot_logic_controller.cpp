@@ -43,8 +43,13 @@ void rcfCallback(const kylinbot_core::VirtualRC::ConstPtr& virtualRC)
 int main(int argc, char **argv)
 {
   
-  ros::init(argc, argv, "kylinbot_control");
+  ros::init(argc, argv, "kylinbot_logic_controller");
 
+  int spin_rate = 100;
+  
+  ros::NodeHandle np("~");
+  np.param<int>("spin_rate", spin_rate, 100); 
+  
   ros::NodeHandle n;
 
   ros::Subscriber odo_sub = n.subscribe<kylinbot_core::Kylin>("odo", 1000, odoCallback); // Odometry feedback listenner
@@ -53,7 +58,7 @@ int main(int argc, char **argv)
   ros::Publisher cmd_pub = n.advertise<kylinbot_core::Kylin>("cmd", 1000); // Command advertiser
   ros::Publisher vrc_pub = n.advertise<kylinbot_core::VirtualRC>("vrc", 1000); // Virtual RC advertiser
 
-  ros::Rate rate(100);
+  ros::Rate rate(spin_rate);
 
   while (ros::ok())
   {
