@@ -18,7 +18,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include"
   "/usr/include/opencv"
-  "/usr/loca/include"
+  "/usr/local/include"
   "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include"
   "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc"
   "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/uart/inc"

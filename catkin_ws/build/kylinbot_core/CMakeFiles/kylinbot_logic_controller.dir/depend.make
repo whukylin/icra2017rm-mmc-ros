@@ -92,9 +92,6 @@ kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rmp.c.o: /hom
 kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/stack.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc/stack.h
 kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/stack.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c
 
-kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/kylinbot_logic_controller.cpp.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/CBUS.h
-kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/kylinbot_logic_controller.cpp.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Kylin.h
-kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/kylinbot_logic_controller.cpp.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/VirtualRC.h
 kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/kylinbot_logic_controller.cpp.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc/ahrs.h
 kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/kylinbot_logic_controller.cpp.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc/asp.h
 kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/kylinbot_logic_controller.cpp.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc/calib.h

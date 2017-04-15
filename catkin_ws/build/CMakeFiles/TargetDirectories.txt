@@ -1,4 +1,3 @@
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/MarkerDetection.dir
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_PosCalib.dir
@@ -20,6 +19,7 @@
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir
+/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir
 /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/roscpp_generate_messages_py.dir

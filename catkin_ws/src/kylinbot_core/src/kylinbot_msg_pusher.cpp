@@ -69,7 +69,7 @@ void vrcCallback(const kylinbot_core::VirtualRC::ConstPtr& virtualRC)
     vrc.frame_id++;
     
     for (int i = 0; i < 6; i++) {
-      vrc.buf[0] = virtualRC->data[0];
+      vrc.buf[i] = virtualRC->data[i];
     }
     
     uint32_t len = Msg_Push(&tx_fifo, tx_buf[1], & msg_head_vrc, &vrc);

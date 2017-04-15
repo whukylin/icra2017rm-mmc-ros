@@ -93,9 +93,6 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o
  /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc/stack.h
  /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o
- /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/CBUS.h
- /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Kylin.h
- /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/VirtualRC.h
  /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc/ahrs.h
  /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc/asp.h
  /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc/calib.h

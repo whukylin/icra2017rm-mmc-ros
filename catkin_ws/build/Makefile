@@ -241,19 +241,6 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named MarkerDetection
-
-# Build rule for target.
-MarkerDetection: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MarkerDetection
-.PHONY : MarkerDetection
-
-# fast build rule for target.
-MarkerDetection/fast:
-	$(MAKE) -f kylinbot_core/CMakeFiles/MarkerDetection.dir/build.make kylinbot_core/CMakeFiles/MarkerDetection.dir/build
-.PHONY : MarkerDetection/fast
-
-#=============================================================================
 # Target rules for targets named _kylinbot_core_generate_messages_check_deps_CBUS
 
 # Build rule for target.
@@ -462,6 +449,19 @@ kylinbot_msg_pusher/fast:
 .PHONY : kylinbot_msg_pusher/fast
 
 #=============================================================================
+# Target rules for targets named kylinbot_rc_playback
+
+# Build rule for target.
+kylinbot_rc_playback: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_rc_playback
+.PHONY : kylinbot_rc_playback
+
+# fast build rule for target.
+kylinbot_rc_playback/fast:
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build
+.PHONY : kylinbot_rc_playback/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -598,7 +598,6 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... MarkerDetection"
 	@echo "... _kylinbot_core_generate_messages_check_deps_CBUS"
 	@echo "... _kylinbot_core_generate_messages_check_deps_Kylin"
 	@echo "... _kylinbot_core_generate_messages_check_deps_PosCalib"
@@ -615,6 +614,7 @@ help:
 	@echo "... kylinbot_logic_controller"
 	@echo "... kylinbot_msg_puller"
 	@echo "... kylinbot_msg_pusher"
+	@echo "... kylinbot_rc_playback"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"

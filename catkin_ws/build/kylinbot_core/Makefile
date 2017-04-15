@@ -150,20 +150,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-kylinbot_core/CMakeFiles/MarkerDetection.dir/rule:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/MarkerDetection.dir/rule
-.PHONY : kylinbot_core/CMakeFiles/MarkerDetection.dir/rule
-
-# Convenience name for target.
-MarkerDetection: kylinbot_core/CMakeFiles/MarkerDetection.dir/rule
-.PHONY : MarkerDetection
-
-# fast build rule for target.
-MarkerDetection/fast:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/MarkerDetection.dir/build.make kylinbot_core/CMakeFiles/MarkerDetection.dir/build
-.PHONY : MarkerDetection/fast
-
-# Convenience name for target.
 kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir/rule:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir/rule
 .PHONY : kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir/rule
@@ -388,6 +374,20 @@ kylinbot_msg_pusher/fast:
 .PHONY : kylinbot_msg_pusher/fast
 
 # Convenience name for target.
+kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/rule:
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/rule
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/rule
+
+# Convenience name for target.
+kylinbot_rc_playback: kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/rule
+.PHONY : kylinbot_rc_playback
+
+# fast build rule for target.
+kylinbot_rc_playback/fast:
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build
+.PHONY : kylinbot_rc_playback/fast
+
+# Convenience name for target.
 kylinbot_core/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : kylinbot_core/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -513,30 +513,6 @@ std_msgs_generate_messages_py/fast:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/std_msgs_generate_messages_py.dir/build.make kylinbot_core/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
-src/MarkerDetection.o: src/MarkerDetection.cpp.o
-.PHONY : src/MarkerDetection.o
-
-# target to build an object file
-src/MarkerDetection.cpp.o:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/MarkerDetection.dir/build.make kylinbot_core/CMakeFiles/MarkerDetection.dir/src/MarkerDetection.cpp.o
-.PHONY : src/MarkerDetection.cpp.o
-
-src/MarkerDetection.i: src/MarkerDetection.cpp.i
-.PHONY : src/MarkerDetection.i
-
-# target to preprocess a source file
-src/MarkerDetection.cpp.i:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/MarkerDetection.dir/build.make kylinbot_core/CMakeFiles/MarkerDetection.dir/src/MarkerDetection.cpp.i
-.PHONY : src/MarkerDetection.cpp.i
-
-src/MarkerDetection.s: src/MarkerDetection.cpp.s
-.PHONY : src/MarkerDetection.s
-
-# target to generate assembly for a file
-src/MarkerDetection.cpp.s:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/MarkerDetection.dir/build.make kylinbot_core/CMakeFiles/MarkerDetection.dir/src/MarkerDetection.cpp.s
-.PHONY : src/MarkerDetection.cpp.s
-
 src/asp/src/ahrs.o: src/asp/src/ahrs.c.o
 .PHONY : src/asp/src/ahrs.o
 
@@ -545,6 +521,7 @@ src/asp/src/ahrs.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/ahrs.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/ahrs.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/ahrs.c.o
 .PHONY : src/asp/src/ahrs.c.o
 
 src/asp/src/ahrs.i: src/asp/src/ahrs.c.i
@@ -555,6 +532,7 @@ src/asp/src/ahrs.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/ahrs.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/ahrs.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/ahrs.c.i
 .PHONY : src/asp/src/ahrs.c.i
 
 src/asp/src/ahrs.s: src/asp/src/ahrs.c.s
@@ -565,6 +543,7 @@ src/asp/src/ahrs.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/ahrs.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/ahrs.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/ahrs.c.s
 .PHONY : src/asp/src/ahrs.c.s
 
 src/asp/src/calib.o: src/asp/src/calib.c.o
@@ -575,6 +554,7 @@ src/asp/src/calib.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/calib.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/calib.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/calib.c.o
 .PHONY : src/asp/src/calib.c.o
 
 src/asp/src/calib.i: src/asp/src/calib.c.i
@@ -585,6 +565,7 @@ src/asp/src/calib.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/calib.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/calib.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/calib.c.i
 .PHONY : src/asp/src/calib.c.i
 
 src/asp/src/calib.s: src/asp/src/calib.c.s
@@ -595,6 +576,7 @@ src/asp/src/calib.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/calib.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/calib.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/calib.c.s
 .PHONY : src/asp/src/calib.c.s
 
 src/asp/src/cbus.o: src/asp/src/cbus.c.o
@@ -605,6 +587,7 @@ src/asp/src/cbus.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/cbus.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/cbus.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/cbus.c.o
 .PHONY : src/asp/src/cbus.c.o
 
 src/asp/src/cbus.i: src/asp/src/cbus.c.i
@@ -615,6 +598,7 @@ src/asp/src/cbus.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/cbus.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/cbus.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/cbus.c.i
 .PHONY : src/asp/src/cbus.c.i
 
 src/asp/src/cbus.s: src/asp/src/cbus.c.s
@@ -625,6 +609,7 @@ src/asp/src/cbus.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/cbus.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/cbus.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/cbus.c.s
 .PHONY : src/asp/src/cbus.c.s
 
 src/asp/src/crc16.o: src/asp/src/crc16.c.o
@@ -635,6 +620,7 @@ src/asp/src/crc16.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/crc16.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/crc16.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/crc16.c.o
 .PHONY : src/asp/src/crc16.c.o
 
 src/asp/src/crc16.i: src/asp/src/crc16.c.i
@@ -645,6 +631,7 @@ src/asp/src/crc16.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/crc16.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/crc16.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/crc16.c.i
 .PHONY : src/asp/src/crc16.c.i
 
 src/asp/src/crc16.s: src/asp/src/crc16.c.s
@@ -655,6 +642,7 @@ src/asp/src/crc16.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/crc16.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/crc16.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/crc16.c.s
 .PHONY : src/asp/src/crc16.c.s
 
 src/asp/src/dbuf.o: src/asp/src/dbuf.c.o
@@ -665,6 +653,7 @@ src/asp/src/dbuf.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/dbuf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/dbuf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/dbuf.c.o
 .PHONY : src/asp/src/dbuf.c.o
 
 src/asp/src/dbuf.i: src/asp/src/dbuf.c.i
@@ -675,6 +664,7 @@ src/asp/src/dbuf.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/dbuf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/dbuf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/dbuf.c.i
 .PHONY : src/asp/src/dbuf.c.i
 
 src/asp/src/dbuf.s: src/asp/src/dbuf.c.s
@@ -685,6 +675,7 @@ src/asp/src/dbuf.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/dbuf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/dbuf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/dbuf.c.s
 .PHONY : src/asp/src/dbuf.c.s
 
 src/asp/src/dbus.o: src/asp/src/dbus.c.o
@@ -695,6 +686,7 @@ src/asp/src/dbus.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/dbus.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/dbus.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/dbus.c.o
 .PHONY : src/asp/src/dbus.c.o
 
 src/asp/src/dbus.i: src/asp/src/dbus.c.i
@@ -705,6 +697,7 @@ src/asp/src/dbus.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/dbus.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/dbus.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/dbus.c.i
 .PHONY : src/asp/src/dbus.c.i
 
 src/asp/src/dbus.s: src/asp/src/dbus.c.s
@@ -715,6 +708,7 @@ src/asp/src/dbus.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/dbus.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/dbus.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/dbus.c.s
 .PHONY : src/asp/src/dbus.c.s
 
 src/asp/src/ekf.o: src/asp/src/ekf.c.o
@@ -725,6 +719,7 @@ src/asp/src/ekf.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/ekf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/ekf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/ekf.c.o
 .PHONY : src/asp/src/ekf.c.o
 
 src/asp/src/ekf.i: src/asp/src/ekf.c.i
@@ -735,6 +730,7 @@ src/asp/src/ekf.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/ekf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/ekf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/ekf.c.i
 .PHONY : src/asp/src/ekf.c.i
 
 src/asp/src/ekf.s: src/asp/src/ekf.c.s
@@ -745,6 +741,7 @@ src/asp/src/ekf.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/ekf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/ekf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/ekf.c.s
 .PHONY : src/asp/src/ekf.c.s
 
 src/asp/src/est.o: src/asp/src/est.c.o
@@ -755,6 +752,7 @@ src/asp/src/est.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/est.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/est.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/est.c.o
 .PHONY : src/asp/src/est.c.o
 
 src/asp/src/est.i: src/asp/src/est.c.i
@@ -765,6 +763,7 @@ src/asp/src/est.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/est.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/est.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/est.c.i
 .PHONY : src/asp/src/est.c.i
 
 src/asp/src/est.s: src/asp/src/est.c.s
@@ -775,6 +774,7 @@ src/asp/src/est.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/est.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/est.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/est.c.s
 .PHONY : src/asp/src/est.c.s
 
 src/asp/src/fifo.o: src/asp/src/fifo.c.o
@@ -785,6 +785,7 @@ src/asp/src/fifo.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/fifo.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/fifo.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/fifo.c.o
 .PHONY : src/asp/src/fifo.c.o
 
 src/asp/src/fifo.i: src/asp/src/fifo.c.i
@@ -795,6 +796,7 @@ src/asp/src/fifo.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/fifo.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/fifo.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/fifo.c.i
 .PHONY : src/asp/src/fifo.c.i
 
 src/asp/src/fifo.s: src/asp/src/fifo.c.s
@@ -805,6 +807,7 @@ src/asp/src/fifo.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/fifo.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/fifo.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/fifo.c.s
 .PHONY : src/asp/src/fifo.c.s
 
 src/asp/src/fun.o: src/asp/src/fun.c.o
@@ -815,6 +818,7 @@ src/asp/src/fun.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/fun.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/fun.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/fun.c.o
 .PHONY : src/asp/src/fun.c.o
 
 src/asp/src/fun.i: src/asp/src/fun.c.i
@@ -825,6 +829,7 @@ src/asp/src/fun.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/fun.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/fun.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/fun.c.i
 .PHONY : src/asp/src/fun.c.i
 
 src/asp/src/fun.s: src/asp/src/fun.c.s
@@ -835,6 +840,7 @@ src/asp/src/fun.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/fun.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/fun.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/fun.c.s
 .PHONY : src/asp/src/fun.c.s
 
 src/asp/src/gdf.o: src/asp/src/gdf.c.o
@@ -845,6 +851,7 @@ src/asp/src/gdf.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/gdf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/gdf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/gdf.c.o
 .PHONY : src/asp/src/gdf.c.o
 
 src/asp/src/gdf.i: src/asp/src/gdf.c.i
@@ -855,6 +862,7 @@ src/asp/src/gdf.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/gdf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/gdf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/gdf.c.i
 .PHONY : src/asp/src/gdf.c.i
 
 src/asp/src/gdf.s: src/asp/src/gdf.c.s
@@ -865,6 +873,7 @@ src/asp/src/gdf.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/gdf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/gdf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/gdf.c.s
 .PHONY : src/asp/src/gdf.c.s
 
 src/asp/src/hcf.o: src/asp/src/hcf.c.o
@@ -875,6 +884,7 @@ src/asp/src/hcf.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/hcf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/hcf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/hcf.c.o
 .PHONY : src/asp/src/hcf.c.o
 
 src/asp/src/hcf.i: src/asp/src/hcf.c.i
@@ -885,6 +895,7 @@ src/asp/src/hcf.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/hcf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/hcf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/hcf.c.i
 .PHONY : src/asp/src/hcf.c.i
 
 src/asp/src/hcf.s: src/asp/src/hcf.c.s
@@ -895,6 +906,7 @@ src/asp/src/hcf.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/hcf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/hcf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/hcf.c.s
 .PHONY : src/asp/src/hcf.c.s
 
 src/asp/src/hcp.o: src/asp/src/hcp.c.o
@@ -905,6 +917,7 @@ src/asp/src/hcp.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/hcp.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/hcp.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/hcp.c.o
 .PHONY : src/asp/src/hcp.c.o
 
 src/asp/src/hcp.i: src/asp/src/hcp.c.i
@@ -915,6 +928,7 @@ src/asp/src/hcp.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/hcp.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/hcp.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/hcp.c.i
 .PHONY : src/asp/src/hcp.c.i
 
 src/asp/src/hcp.s: src/asp/src/hcp.c.s
@@ -925,6 +939,7 @@ src/asp/src/hcp.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/hcp.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/hcp.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/hcp.c.s
 .PHONY : src/asp/src/hcp.c.s
 
 src/asp/src/linkedlist.o: src/asp/src/linkedlist.c.o
@@ -935,6 +950,7 @@ src/asp/src/linkedlist.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/linkedlist.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/linkedlist.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/linkedlist.c.o
 .PHONY : src/asp/src/linkedlist.c.o
 
 src/asp/src/linkedlist.i: src/asp/src/linkedlist.c.i
@@ -945,6 +961,7 @@ src/asp/src/linkedlist.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/linkedlist.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/linkedlist.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/linkedlist.c.i
 .PHONY : src/asp/src/linkedlist.c.i
 
 src/asp/src/linkedlist.s: src/asp/src/linkedlist.c.s
@@ -955,6 +972,7 @@ src/asp/src/linkedlist.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/linkedlist.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/linkedlist.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/linkedlist.c.s
 .PHONY : src/asp/src/linkedlist.c.s
 
 src/asp/src/linkednode.o: src/asp/src/linkednode.c.o
@@ -965,6 +983,7 @@ src/asp/src/linkednode.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/linkednode.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/linkednode.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/linkednode.c.o
 .PHONY : src/asp/src/linkednode.c.o
 
 src/asp/src/linkednode.i: src/asp/src/linkednode.c.i
@@ -975,6 +994,7 @@ src/asp/src/linkednode.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/linkednode.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/linkednode.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/linkednode.c.i
 .PHONY : src/asp/src/linkednode.c.i
 
 src/asp/src/linkednode.s: src/asp/src/linkednode.c.s
@@ -985,6 +1005,7 @@ src/asp/src/linkednode.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/linkednode.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/linkednode.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/linkednode.c.s
 .PHONY : src/asp/src/linkednode.c.s
 
 src/asp/src/maf.o: src/asp/src/maf.c.o
@@ -995,6 +1016,7 @@ src/asp/src/maf.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/maf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/maf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/maf.c.o
 .PHONY : src/asp/src/maf.c.o
 
 src/asp/src/maf.i: src/asp/src/maf.c.i
@@ -1005,6 +1027,7 @@ src/asp/src/maf.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/maf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/maf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/maf.c.i
 .PHONY : src/asp/src/maf.c.i
 
 src/asp/src/maf.s: src/asp/src/maf.c.s
@@ -1015,6 +1038,7 @@ src/asp/src/maf.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/maf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/maf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/maf.c.s
 .PHONY : src/asp/src/maf.c.s
 
 src/asp/src/mec.o: src/asp/src/mec.c.o
@@ -1025,6 +1049,7 @@ src/asp/src/mec.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/mec.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/mec.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/mec.c.o
 .PHONY : src/asp/src/mec.c.o
 
 src/asp/src/mec.i: src/asp/src/mec.c.i
@@ -1035,6 +1060,7 @@ src/asp/src/mec.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/mec.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/mec.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/mec.c.i
 .PHONY : src/asp/src/mec.c.i
 
 src/asp/src/mec.s: src/asp/src/mec.c.s
@@ -1045,6 +1071,7 @@ src/asp/src/mec.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/mec.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/mec.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/mec.c.s
 .PHONY : src/asp/src/mec.c.s
 
 src/asp/src/mecanum.o: src/asp/src/mecanum.c.o
@@ -1055,6 +1082,7 @@ src/asp/src/mecanum.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/mecanum.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/mecanum.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/mecanum.c.o
 .PHONY : src/asp/src/mecanum.c.o
 
 src/asp/src/mecanum.i: src/asp/src/mecanum.c.i
@@ -1065,6 +1093,7 @@ src/asp/src/mecanum.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/mecanum.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/mecanum.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/mecanum.c.i
 .PHONY : src/asp/src/mecanum.c.i
 
 src/asp/src/mecanum.s: src/asp/src/mecanum.c.s
@@ -1075,6 +1104,7 @@ src/asp/src/mecanum.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/mecanum.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/mecanum.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/mecanum.c.s
 .PHONY : src/asp/src/mecanum.c.s
 
 src/asp/src/msg.o: src/asp/src/msg.c.o
@@ -1085,6 +1115,7 @@ src/asp/src/msg.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/msg.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/msg.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/msg.c.o
 .PHONY : src/asp/src/msg.c.o
 
 src/asp/src/msg.i: src/asp/src/msg.c.i
@@ -1095,6 +1126,7 @@ src/asp/src/msg.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/msg.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/msg.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/msg.c.i
 .PHONY : src/asp/src/msg.c.i
 
 src/asp/src/msg.s: src/asp/src/msg.c.s
@@ -1105,6 +1137,7 @@ src/asp/src/msg.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/msg.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/msg.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/msg.c.s
 .PHONY : src/asp/src/msg.c.s
 
 src/asp/src/pid.o: src/asp/src/pid.c.o
@@ -1115,6 +1148,7 @@ src/asp/src/pid.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/pid.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/pid.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/pid.c.o
 .PHONY : src/asp/src/pid.c.o
 
 src/asp/src/pid.i: src/asp/src/pid.c.i
@@ -1125,6 +1159,7 @@ src/asp/src/pid.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/pid.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/pid.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/pid.c.i
 .PHONY : src/asp/src/pid.c.i
 
 src/asp/src/pid.s: src/asp/src/pid.c.s
@@ -1135,6 +1170,7 @@ src/asp/src/pid.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/pid.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/pid.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/pid.c.s
 .PHONY : src/asp/src/pid.c.s
 
 src/asp/src/rcf.o: src/asp/src/rcf.c.o
@@ -1145,6 +1181,7 @@ src/asp/src/rcf.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rcf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rcf.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rcf.c.o
 .PHONY : src/asp/src/rcf.c.o
 
 src/asp/src/rcf.i: src/asp/src/rcf.c.i
@@ -1155,6 +1192,7 @@ src/asp/src/rcf.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rcf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rcf.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rcf.c.i
 .PHONY : src/asp/src/rcf.c.i
 
 src/asp/src/rcf.s: src/asp/src/rcf.c.s
@@ -1165,6 +1203,7 @@ src/asp/src/rcf.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rcf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rcf.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rcf.c.s
 .PHONY : src/asp/src/rcf.c.s
 
 src/asp/src/rcp.o: src/asp/src/rcp.c.o
@@ -1175,6 +1214,7 @@ src/asp/src/rcp.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rcp.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rcp.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rcp.c.o
 .PHONY : src/asp/src/rcp.c.o
 
 src/asp/src/rcp.i: src/asp/src/rcp.c.i
@@ -1185,6 +1225,7 @@ src/asp/src/rcp.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rcp.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rcp.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rcp.c.i
 .PHONY : src/asp/src/rcp.c.i
 
 src/asp/src/rcp.s: src/asp/src/rcp.c.s
@@ -1195,6 +1236,7 @@ src/asp/src/rcp.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rcp.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rcp.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rcp.c.s
 .PHONY : src/asp/src/rcp.c.s
 
 src/asp/src/rmp.o: src/asp/src/rmp.c.o
@@ -1205,6 +1247,7 @@ src/asp/src/rmp.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rmp.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rmp.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rmp.c.o
 .PHONY : src/asp/src/rmp.c.o
 
 src/asp/src/rmp.i: src/asp/src/rmp.c.i
@@ -1215,6 +1258,7 @@ src/asp/src/rmp.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rmp.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rmp.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rmp.c.i
 .PHONY : src/asp/src/rmp.c.i
 
 src/asp/src/rmp.s: src/asp/src/rmp.c.s
@@ -1225,6 +1269,7 @@ src/asp/src/rmp.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/rmp.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/rmp.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/rmp.c.s
 .PHONY : src/asp/src/rmp.c.s
 
 src/asp/src/stack.o: src/asp/src/stack.c.o
@@ -1235,6 +1280,7 @@ src/asp/src/stack.c.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/stack.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/stack.c.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/stack.c.o
 .PHONY : src/asp/src/stack.c.o
 
 src/asp/src/stack.i: src/asp/src/stack.c.i
@@ -1245,6 +1291,7 @@ src/asp/src/stack.c.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/stack.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/stack.c.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/stack.c.i
 .PHONY : src/asp/src/stack.c.i
 
 src/asp/src/stack.s: src/asp/src/stack.c.s
@@ -1255,6 +1302,7 @@ src/asp/src/stack.c.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/stack.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/asp/src/stack.c.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/stack.c.s
 .PHONY : src/asp/src/stack.c.s
 
 src/kylinbot_logic_controller.o: src/kylinbot_logic_controller.cpp.o
@@ -1329,6 +1377,30 @@ src/kylinbot_msg_pusher.cpp.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.s
 .PHONY : src/kylinbot_msg_pusher.cpp.s
 
+src/kylinbot_rc_playback.o: src/kylinbot_rc_playback.cpp.o
+.PHONY : src/kylinbot_rc_playback.o
+
+# target to build an object file
+src/kylinbot_rc_playback.cpp.o:
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/kylinbot_rc_playback.cpp.o
+.PHONY : src/kylinbot_rc_playback.cpp.o
+
+src/kylinbot_rc_playback.i: src/kylinbot_rc_playback.cpp.i
+.PHONY : src/kylinbot_rc_playback.i
+
+# target to preprocess a source file
+src/kylinbot_rc_playback.cpp.i:
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/kylinbot_rc_playback.cpp.i
+.PHONY : src/kylinbot_rc_playback.cpp.i
+
+src/kylinbot_rc_playback.s: src/kylinbot_rc_playback.cpp.s
+.PHONY : src/kylinbot_rc_playback.s
+
+# target to generate assembly for a file
+src/kylinbot_rc_playback.cpp.s:
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/kylinbot_rc_playback.cpp.s
+.PHONY : src/kylinbot_rc_playback.cpp.s
+
 src/uart/src/uart.o: src/uart/src/uart.cpp.o
 .PHONY : src/uart/src/uart.o
 
@@ -1337,6 +1409,7 @@ src/uart/src/uart.cpp.o:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/uart/src/uart.cpp.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/uart/src/uart.cpp.o
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/uart/src/uart.cpp.o
 .PHONY : src/uart/src/uart.cpp.o
 
 src/uart/src/uart.i: src/uart/src/uart.cpp.i
@@ -1347,6 +1420,7 @@ src/uart/src/uart.cpp.i:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/uart/src/uart.cpp.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/uart/src/uart.cpp.i
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.i
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/uart/src/uart.cpp.i
 .PHONY : src/uart/src/uart.cpp.i
 
 src/uart/src/uart.s: src/uart/src/uart.cpp.s
@@ -1357,6 +1431,7 @@ src/uart/src/uart.cpp.s:
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/src/uart/src/uart.cpp.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/src/uart/src/uart.cpp.s
 	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.s
+	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/src/uart/src/uart.cpp.s
 .PHONY : src/uart/src/uart.cpp.s
 
 # Help Target
@@ -1365,7 +1440,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... MarkerDetection"
 	@echo "... _kylinbot_core_generate_messages_check_deps_CBUS"
 	@echo "... _kylinbot_core_generate_messages_check_deps_Kylin"
 	@echo "... _kylinbot_core_generate_messages_check_deps_PosCalib"
@@ -1386,6 +1460,7 @@ help:
 	@echo "... kylinbot_logic_controller"
 	@echo "... kylinbot_msg_puller"
 	@echo "... kylinbot_msg_pusher"
+	@echo "... kylinbot_rc_playback"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
@@ -1398,9 +1473,6 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
-	@echo "... src/MarkerDetection.o"
-	@echo "... src/MarkerDetection.i"
-	@echo "... src/MarkerDetection.s"
 	@echo "... src/asp/src/ahrs.o"
 	@echo "... src/asp/src/ahrs.i"
 	@echo "... src/asp/src/ahrs.s"
@@ -1482,6 +1554,9 @@ help:
 	@echo "... src/kylinbot_msg_pusher.o"
 	@echo "... src/kylinbot_msg_pusher.i"
 	@echo "... src/kylinbot_msg_pusher.s"
+	@echo "... src/kylinbot_rc_playback.o"
+	@echo "... src/kylinbot_rc_playback.i"
+	@echo "... src/kylinbot_rc_playback.s"
 	@echo "... src/uart/src/uart.o"
 	@echo "... src/uart/src/uart.i"
 	@echo "... src/uart/src/uart.s"

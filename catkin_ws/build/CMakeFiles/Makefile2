@@ -230,13 +230,13 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
@@ -261,13 +261,13 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  1
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest_main.dir/rule
@@ -289,15 +289,14 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory kylinbot_core
 
 # Convenience name for "all" pass in the directory.
-kylinbot_core/all: kylinbot_core/CMakeFiles/MarkerDetection.dir/all
 kylinbot_core/all: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/all
 kylinbot_core/all: kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/all
 kylinbot_core/all: kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/all
 kylinbot_core/all: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/all
+kylinbot_core/all: kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/all
 .PHONY : kylinbot_core/all
 
 # Convenience name for "clean" pass in the directory.
-kylinbot_core/clean: kylinbot_core/CMakeFiles/MarkerDetection.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_PosCalib.dir/clean
@@ -314,6 +313,7 @@ kylinbot_core/clean: kylinbot_core/CMakeFiles/kylinbot_core_genpy.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/clean
+kylinbot_core/clean: kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 kylinbot_core/clean: kylinbot_core/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -328,41 +328,6 @@ kylinbot_core/clean: kylinbot_core/CMakeFiles/std_msgs_generate_messages_py.dir/
 # Convenience name for "preinstall" pass in the directory.
 kylinbot_core/preinstall:
 .PHONY : kylinbot_core/preinstall
-
-#=============================================================================
-# Target rules for target kylinbot_core/CMakeFiles/MarkerDetection.dir
-
-# All Build rule for target.
-kylinbot_core/CMakeFiles/MarkerDetection.dir/all:
-	$(MAKE) -f kylinbot_core/CMakeFiles/MarkerDetection.dir/build.make kylinbot_core/CMakeFiles/MarkerDetection.dir/depend
-	$(MAKE) -f kylinbot_core/CMakeFiles/MarkerDetection.dir/build.make kylinbot_core/CMakeFiles/MarkerDetection.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  1
-	@echo "Built target MarkerDetection"
-.PHONY : kylinbot_core/CMakeFiles/MarkerDetection.dir/all
-
-# Include target in all.
-all: kylinbot_core/CMakeFiles/MarkerDetection.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-kylinbot_core/CMakeFiles/MarkerDetection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/MarkerDetection.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
-.PHONY : kylinbot_core/CMakeFiles/MarkerDetection.dir/rule
-
-# Convenience name for target.
-MarkerDetection: kylinbot_core/CMakeFiles/MarkerDetection.dir/rule
-.PHONY : MarkerDetection
-
-# clean rule for target.
-kylinbot_core/CMakeFiles/MarkerDetection.dir/clean:
-	$(MAKE) -f kylinbot_core/CMakeFiles/MarkerDetection.dir/build.make kylinbot_core/CMakeFiles/MarkerDetection.dir/clean
-.PHONY : kylinbot_core/CMakeFiles/MarkerDetection.dir/clean
-
-# clean rule for target.
-clean: kylinbot_core/CMakeFiles/MarkerDetection.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir
@@ -563,7 +528,7 @@ kylinbot_core/CMakeFiles/kylinbot_core_gencpp.dir/all: kylinbot_core/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_core_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_core_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_gencpp.dir/rule
@@ -585,9 +550,9 @@ clean: kylinbot_core/CMakeFiles/kylinbot_core_gencpp.dir/clean
 # Target rules for target kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir
 
 # All Build rule for target.
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/all: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/all: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/all: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all
-kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/all: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/build.make kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/depend
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/build.make kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 
@@ -600,7 +565,7 @@ all: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/rule
@@ -623,21 +588,21 @@ clean: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages.dir/clean
 
 # All Build rule for target.
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_PosCalib.dir/all
-kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_VirtualRC.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir/all
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Sonar.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_ZGyro.dir/all
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_VirtualRC.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir/all
-kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all: kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/build.make kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/depend
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/build.make kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  4 5 6 7 8 9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  2 3 4 5 6
 	@echo "Built target kylinbot_core_generate_messages_cpp"
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/rule
@@ -660,21 +625,21 @@ clean: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/clean
 
 # All Build rule for target.
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_PosCalib.dir/all
-kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_VirtualRC.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir/all
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Sonar.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_ZGyro.dir/all
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_VirtualRC.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir/all
-kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all: kylinbot_core/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/build.make kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/depend
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/build.make kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  10 11 12 13 14 15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  7 8 9 10 11
 	@echo "Built target kylinbot_core_generate_messages_lisp"
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/rule
@@ -697,21 +662,21 @@ clean: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/clean
 
 # All Build rule for target.
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_PosCalib.dir/all
-kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/std_msgs_generate_messages_py.dir/all
-kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_VirtualRC.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir/all
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/std_msgs_generate_messages_py.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Sonar.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_ZGyro.dir/all
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_VirtualRC.dir/all
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir/all
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/build.make kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/depend
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/build.make kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  16 17 18 19 20 21 22
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  12 13 14 15 16
 	@echo "Built target kylinbot_core_generate_messages_py"
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_py.dir/rule
@@ -742,7 +707,7 @@ kylinbot_core/CMakeFiles/kylinbot_core_genlisp.dir/all: kylinbot_core/CMakeFiles
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_core_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_core_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_genlisp.dir/rule
@@ -773,7 +738,7 @@ kylinbot_core/CMakeFiles/kylinbot_core_genpy.dir/all: kylinbot_core/CMakeFiles/k
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_core_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_core_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_core_genpy.dir/rule
@@ -798,7 +763,7 @@ clean: kylinbot_core/CMakeFiles/kylinbot_core_genpy.dir/clean
 kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/all:
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/depend
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37
 	@echo "Built target kylinbot_logic_controller"
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/all
 
@@ -808,7 +773,7 @@ all: kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/all
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 21
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/rule
@@ -833,7 +798,7 @@ clean: kylinbot_core/CMakeFiles/kylinbot_logic_controller.dir/clean
 kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/all: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/depend
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58
 	@echo "Built target kylinbot_msg_puller"
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/all
 
@@ -843,7 +808,7 @@ all: kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/all
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/rule
@@ -868,7 +833,7 @@ clean: kylinbot_core/CMakeFiles/kylinbot_msg_puller.dir/clean
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/all:
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/depend
 	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79
 	@echo "Built target kylinbot_msg_pusher"
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/all
 
@@ -878,7 +843,7 @@ all: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/all
 
 # Build rule for subdir invocation for target.
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 21
 	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/rule
@@ -894,6 +859,41 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/clean:
 
 # clean rule for target.
 clean: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir
+
+# All Build rule for target.
+kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/all: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/all
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/depend
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles  80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
+	@echo "Built target kylinbot_rc_playback"
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/all
+
+# Include target in all.
+all: kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 26
+	$(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles 0
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/rule
+
+# Convenience name for target.
+kylinbot_rc_playback: kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/rule
+.PHONY : kylinbot_rc_playback
+
+# clean rule for target.
+kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/clean:
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/build.make kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/clean
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/clean
+
+# clean rule for target.
+clean: kylinbot_core/CMakeFiles/kylinbot_rc_playback.dir/clean
 .PHONY : clean
 
 #=============================================================================
