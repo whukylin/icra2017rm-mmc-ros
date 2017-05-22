@@ -7,4 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build"
+export CPATH="/opt/ros/indigo/include"
+export LD_LIBRARY_PATH="/opt/ros/indigo/lib"
+export PKG_CONFIG_PATH="/opt/ros/indigo/lib/pkgconfig"
+export PWD="/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build"
+export PYTHONPATH="/opt/ros/indigo/lib/python2.7/dist-packages"
+export ROS_PACKAGE_PATH="/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks"

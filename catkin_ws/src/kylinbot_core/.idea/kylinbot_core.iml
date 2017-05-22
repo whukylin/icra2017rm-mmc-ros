@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/kylinbot_logic_controller.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/kylinbot_msg_puller.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/kylinbot_image_proc.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/kylinbot_rc_playback.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/uart/src/uart.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/kylinbot_video_cap.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/kylinbot_msg_pusher.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/fun.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/stack.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/dbus.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/mec.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/mecanum.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/linkedlist.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/gdf.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/pid.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/fifo.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/ekf.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/rcf.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/hcf.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/est.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/rmp.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/linkednode.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/rcp.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/dbuf.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/crc16.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/cbus.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/calib.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/maf.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/ahrs.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/hcp.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/asp/src/msg.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/viz/src/RMVideoCapture.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/viz/src/MarkerDetection.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/package.xml" isTestSource="false" />
+    </content>
+    <content url="file:///usr/src/gtest">
+      <sourceFolder url="file:///usr/src/gtest/src/gtest_main.cc" isTestSource="false" />
+      <sourceFolder url="file:///usr/src/gtest/src/gtest-all.cc" isTestSource="false" />
+      <sourceFolder url="file:///usr/src/gtest/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file:///usr/src/gtest/cmake/internal_utils.cmake" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+          <root url="file:///opt/ros/indigo/include" />
+          <root url="file://$MODULE_DIR$/../../devel/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/kylinbot_core-6df047c7/6df047c7/Release/devel/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/kylinbot_core-6df047c7/6df047c7/Debug/devel/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/kylinbot_core-6df047c7/6df047c7/RelWithDebInfo/devel/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/kylinbot_core-6df047c7/6df047c7/MinSizeRel/devel/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+          <root url="file:///opt/ros/indigo/include" />
+          <root url="file://$MODULE_DIR$/../../devel/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/kylinbot_core-6df047c7/6df047c7/Release/devel/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/kylinbot_core-6df047c7/6df047c7/Debug/devel/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/kylinbot_core-6df047c7/6df047c7/RelWithDebInfo/devel/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/kylinbot_core-6df047c7/6df047c7/MinSizeRel/devel/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

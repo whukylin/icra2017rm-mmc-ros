@@ -1,8 +1,8 @@
 # generated from catkin/cmake/template/pkg.context.pc.in
 CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include;/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include".split(';') if "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include;/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include" != "" else []
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include;/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include".split(';') if "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include;/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include" != "" else []
 PROJECT_CATKIN_DEPENDS = "message_runtime".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lkylinbot_core".split(';') if "-lkylinbot_core" != "" else []
 PROJECT_NAME = "kylinbot_core"
-PROJECT_SPACE_DIR = "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel"
+PROJECT_SPACE_DIR = "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel"
 PROJECT_VERSION = "0.0.0"

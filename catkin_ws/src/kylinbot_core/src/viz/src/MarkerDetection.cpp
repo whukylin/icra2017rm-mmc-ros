@@ -1,55 +1,30 @@
-
-/**
- * Copyright (c) 2016, Jack Mo (mobangjack@foxmail.com).
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 #include "MarkerDetection.h"
-#include <opencv2/opencv.hpp>
-
-#include stdio.h>
+#include "opencv2/opencv.hpp"
 #include <iostream>
+#include <stdio.h>
+#include<string.h>
+#include<malloc.h>
+#include<sys/types.h>
+#include<sys/stat.h>
+#include<fcntl.h>
+#include<unistd.h>
+#include<termios.h>
+#include"math.h"
 
+#include <errno.h>
+#include <sys/ioctl.h>
+#include <linux/videodev2.h>
 using namespace cv;
 
 using namespace std;
-
 const char* wndname = "Square Detection Demo";
+volatile double ry,rz,rx;
+volatile double tx,ty,tz;
 
 int grey_thresh=100;
 int numframe=0;   //frame numbers
 int lost_numframe=0;
 double omission=0.0;
-
-RMVideoCapture capture("/dev/video0", 3);
-int exp_time = 62;
-int gain = 30;
-int brightness_ = 10;
-int whiteness_ = 86;
-int saturation_ = 60;
-double ry,rz,rx;
-double tx,ty,tz;
-
-    
-int detection_mode=0;   //detect squares or only blue area. 0: square 1: blue area
-
-/*
-//for 640*480
-Mat cameraMatrix=(Mat_<double>(3,3)<<569.2681,0,288.1437,0,569.4591,263.6782,0,0,1);
-//for 640x480.
-Mat distCoeffs=(Mat_<double>(1,4)<<0.0344,-0.0085,-0.0032,-0.0028);
-*/
 #ifdef Camera_One
 //for 800*600
 //camera 1
@@ -65,24 +40,17 @@ Mat cameraMatrix=(Mat_<double>(3,3)<<1079.2096,0,342.5224,0,1075.3261,353.0309,0
 Mat distCoeffs=(Mat_<double>(1,4)<<-0.4513,0.1492,-0.0030,0.0043);
 #endif
 
+const int ARROW_AREA_MIN=2000;//variable
+const int ARROW_AREA_MAX=20000;
+Mat pro_after;
+
+
 Point3f world_pnt_tl(-65,-85,0);   //unit: mm
 Point3f world_pnt_tr(65,-85,0);
 Point3f world_pnt_br(65,85,0);
 Point3f world_pnt_bl(-65,85,0);
 
-//set the range of arrow size in ARROW_AREA_MIN TO ARROW_AREA_MAX
-const int ARROW_AREA_MIN=3000;//variable
-const int ARROW_AREA_MAX=700*500;
-Mat pro_after;
-int cx=343;   //To change to calibration parameter.
-int cy=320;   //the same with cameraMatrix.cx,cy
-int Color_detect(Mat frame, int &diff_x, int &diff_y);
-
-void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_br,Point3f world_pnt_bl,Point2f pnt_tl_src,Point2f pnt_tr_src,Point2f pnt_br_src,Point2f pnt_bl_src);
-int Color_judge(Mat &src,int area);
-void Sort_rect(vector<Point>& approx);
-
-static double angle( Point pt1, Point pt2, Point pt0 )
+double angle( Point pt1, Point pt2, Point pt0 )
 {
     double dx1 = pt1.x - pt0.x;
     double dy1 = pt1.y - pt0.y;
@@ -91,13 +59,12 @@ static double angle( Point pt1, Point pt2, Point pt0 )
     return (dx1*dx2 + dy1*dy2)/sqrt((dx1*dx1 + dy1*dy1)*(dx2*dx2 + dy2*dy2) + 1e-10);
 }
 
-static void findSquares( Mat src,const Mat& image, vector<vector<Point>>& squares )
+void findSquares( Mat src,const Mat& image, vector<vector<Point> >& squares )
 {
     Mat pyr, timg, gray0(image.size(), CV_8U),Src_HSV(image.size(), CV_8U), gray;
 
-    pyrDown(image, pyr, Size(image.cols/2, image.rows/2));
-    pyrUp(pyr, timg, image.size());
-	
+    //pyrDown(image, pyr, Size(image.cols/2, image.rows/2));
+    //pyrUp(pyr, timg, image.size());
     vector<vector<Point> > contours;
 
     int counts=0,counts_2=0,counts_3=0;
@@ -106,10 +73,11 @@ static void findSquares( Mat src,const Mat& image, vector<vector<Point>>& square
     vector<vector<Point> > rect_3;
     vector<vector<Point> > out;
 
-    cout<<"find squares src.chan="<<src.channels()<<endl;
+    //cout<<"find squares src.chan="<<src.channels()<<endl;
     cvtColor( src, gray0, CV_BGR2GRAY);
-
-    Canny(gray0, gray, 50, 200, 5);
+    normalize(gray0,timg,0,255, NORM_MINMAX,CV_8UC1);
+    // imshow("normal", timg);
+    Canny(timg, gray, 50, 200, 5);
 
 #ifdef _SHOW_PHOTO
     imshow("Canny", gray);
@@ -230,38 +198,51 @@ static void findSquares( Mat src,const Mat& image, vector<vector<Point>>& square
         Rect roi(cand_1[0],cand_1[2]);
 
         Mat ROI_image(src,roi); //src(roi).copyTo(ROI_image);
-        int rect_1_true=Color_judge(ROI_image,(cand_1[2].x-cand_1[0].x)*(cand_1[2].y-cand_1[0].y));
-        cout<<"rect1 true: "<<rect_1_true<<endl;
-        if(rect_1_true)
-            squares.push_back(cand_1);
+        if(ROI_image.rows != 0 && ROI_image.cols != 0)
+        {
+
+            int rect_1_true=Color_judge(ROI_image,(cand_1[2].x-cand_1[0].x)*(cand_1[2].y-cand_1[0].y));
+            //cout<<"rect1 true: "<<rect_1_true<<endl;
+            if(rect_1_true)
+                squares.push_back(cand_1);
+        }
+
+
         if(cand_2.size()>0)
         {
             //Mat ROI_image_2;
             Rect roi_2(cand_2[0],cand_2[2]);
-            Mat ROI_image_2(src,roi_2);;
+            Mat ROI_image_2(src,roi_2);
             //src(roi_2).copyTo(ROI_image_2);
-            int rect_2_true=Color_judge(ROI_image_2,(cand_2[2].x-cand_2[0].x)*(cand_2[2].y-cand_2[0].y));
-            cout<<"rect2 true: "<<rect_2_true<<endl;
-            if(rect_2_true)
-                squares.push_back(cand_2);
+            if(ROI_image_2.rows != 0 && ROI_image_2.cols != 0)
+            {
+                int rect_2_true=Color_judge(ROI_image_2,(cand_2[2].x-cand_2[0].x)*(cand_2[2].y-cand_2[0].y));
+                //cout<<"rect2 true: "<<rect_2_true<<endl;
+                if(rect_2_true)
+                    squares.push_back(cand_2);
+            }
+
             if(cand_3.size()>0)
             {
 
                 Rect roi_3(cand_3[0],cand_3[2]);
                 Mat ROI_image_3(src,roi_3);
                 // src(roi_3).copyTo(ROI_image_3);
-                int rect_3_true=Color_judge(ROI_image_3,(cand_3[2].x-cand_3[0].x)*(cand_3[2].y-cand_3[0].y));
-                cout<<"rect3 true: "<<rect_3_true<<endl;
-                if(rect_3_true)
-                    squares.push_back(cand_3);
+                if(ROI_image_3.rows != 0 && ROI_image_3.cols != 0)
+                {
+                    int rect_3_true=Color_judge(ROI_image_3,(cand_3[2].x-cand_3[0].x)*(cand_3[2].y-cand_3[0].y));
+                    //cout<<"rect3 true: "<<rect_3_true<<endl;
+                    if(rect_3_true)
+                        squares.push_back(cand_3);
+                }
+
                 if(out.size()>0)
                     cout<<"too much rect ! "<<endl;
             }
         }
     }
 }
-
-static void drawSquares( Mat& image, const vector<vector<Point> >& squares )
+void drawSquares( Mat& image, const vector<vector<Point> >& squares )
 {
     for( size_t i = 0; i < squares.size(); i++ )
     {
@@ -272,7 +253,7 @@ static void drawSquares( Mat& image, const vector<vector<Point> >& squares )
 
 #endif
     }
-    cout<<"squares.size: "<<squares.size()<<endl;
+    //cout<<"squares.size: "<<squares.size()<<endl;
 
     //caculate the omission rate
     numframe++;
@@ -288,44 +269,44 @@ static void drawSquares( Mat& image, const vector<vector<Point> >& squares )
     }
 #ifdef _SHOW_PHOTO
     char str_y[20];
-    char str_z[20];
-    char str_x[20];
-    char str_tz[20];
-    char str_ty[20];
-    char str_tx[20];
-    char str_om[20];
-    sprintf(str_y,"%lf",ry);
-    sprintf(str_z,"%lf",rz);
-    sprintf(str_x,"%lf",rx);
-    sprintf(str_tz,"%lf",tz);
-    sprintf(str_ty,"%lf",ty);
-    sprintf(str_tx,"%lf",tx);
-    sprintf(str_om,"%lf",omission);
-    string pre_str_y="thetay: ";
-    string pre_str_z="thetaz: ";
-    string pre_str_x="thetax: ";
-    string pre_str_tz="tz: ";
-    string pre_str_ty="ty: ";
-    string pre_str_tx="tx: ";
-    string pre_str_om="omiss: ";
-    string full_y=pre_str_y+str_y;
-    string full_z=pre_str_z+str_z;
-    string full_x=pre_str_x+str_x;
-    string full_tz=pre_str_tz+str_tz;
-    string full_ty=pre_str_ty+str_ty;
-    string full_tx=pre_str_tx+str_tx;
-    string full_om=pre_str_om+str_om;
-    putText(image,full_y,Point(30,30),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,0,255),2);
-    putText(image,full_z,Point(30,70),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
-    putText(image,full_x,Point(30,100),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
-    putText(image,full_tz,Point(30,130),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,0,255),2);
-    putText(image,full_ty,Point(30,170),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
-    putText(image,full_tx,Point(30,200),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
-    putText(image,full_om,Point(30,240),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
+        char str_z[20];
+        char str_x[20];
+        char str_tz[20];
+        char str_ty[20];
+        char str_tx[20];
+		char str_om[20];
+        sprintf(str_y,"%lf",ry);
+        sprintf(str_z,"%lf",rz);
+        sprintf(str_x,"%lf",rx);
+        sprintf(str_tz,"%lf",tz);
+        sprintf(str_ty,"%lf",ty);
+        sprintf(str_tx,"%lf",tx);
+		sprintf(str_om,"%lf",omission);
+        string pre_str_y="thetay: ";
+        string pre_str_z="thetaz: ";
+        string pre_str_x="thetax: ";
+        string pre_str_tz="tz: ";
+        string pre_str_ty="ty: ";
+        string pre_str_tx="tx: ";
+		string pre_str_om="omiss: ";
+        string full_y=pre_str_y+str_y;
+        string full_z=pre_str_z+str_z;
+        string full_x=pre_str_x+str_x;
+        string full_tz=pre_str_tz+str_tz;
+        string full_ty=pre_str_ty+str_ty;
+        string full_tx=pre_str_tx+str_tx;
+		string full_om=pre_str_om+str_om;
+        putText(image,full_y,Point(30,30),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,0,255),2);
+        putText(image,full_z,Point(30,70),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
+        putText(image,full_x,Point(30,100),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
+        putText(image,full_tz,Point(30,130),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,0,255),2);
+        putText(image,full_ty,Point(30,170),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
+        putText(image,full_tx,Point(30,200),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
+		putText(image,full_om,Point(30,240),CV_FONT_HERSHEY_SIMPLEX,1,Scalar(0,255,0),2);
 #endif
 
 #ifdef _SHOW_PHOTO
-    imshow(wndname, image);
+    imshow("Square Detection Demo", image);
 #endif
 }
 
@@ -374,7 +355,7 @@ void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_
     double rm[9];
     cv::Mat rotM(3, 3, CV_64FC1, rm);
     Rodrigues(rvec,rotM);
-    cout<<"tvec: "<<tvec<<endl;
+
     double r11 = rotM.ptr<double>(0)[0];
     double r12 = rotM.ptr<double>(0)[1];
     double r13 = rotM.ptr<double>(0)[2];
@@ -388,94 +369,35 @@ void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_
     double thetaz = atan2(r21, r11) / CV_PI * 180;
     double thetay = atan2(-1 * r31, sqrt(r32*r32 + r33*r33)) / CV_PI * 180;
     double thetax = atan2(r32, r33) / CV_PI * 180;
-    ry=thetay;
+    ry=thetay*PROP;
     rz=thetaz;
     rx=thetax;
     tx=tvec.ptr<double>(0)[0];
     ty=tvec.ptr<double>(1)[0];
     tz=tvec.ptr<double>(2)[0];
+#ifdef _SHOW_OUTPUT
+    cout<<"tvec: "<<tvec<<endl;
     cout<<"thetay: "<<thetay<<endl;
     cout<<"thetaz: "<<thetaz<<endl;
     cout<<"thetax: "<<thetax<<endl;
+#endif
+
 }
-
-/************************************************************/
-/**********************detect the blue area******************/
-/**********************Input:image with blue arrow inside *****/
-/*********************Output: the center(x,y) ofthe blue area*********/
-int Color_detect(Mat frame, int &diff_x, int &diff_y)
-{
-    vector<Mat> HSVSplit;
-    //Returns a rectangular structuring element of the specified size and shape for morphological operations.
-    Mat element = getStructuringElement(MORPH_RECT, Size(5, 5));
-    vector<vector<Point> > contours;
-    Mat HSVImage;
-    Mat out;
-    Mat HGreen;
-    Mat SGreen;
-    Rect r;
-    Rect max_tmp;
-
-    cvtColor(frame, HSVImage, CV_BGR2HSV);
-    split(HSVImage,HSVSplit);
-    //Hgreen=HSVSplit[0]>lower&&HSVSplit[0]<up , mask, threshold can be fine tuned.
-    inRange(HSVSplit[0], Scalar(80), Scalar(120), HGreen);
-    threshold(HSVSplit[1], SGreen, 80, 255, THRESH_BINARY);    //S channal intensity
-    //bitwise conjunction
-    cv::bitwise_and(HGreen, SGreen, out);
-    morphologyEx(out, out, MORPH_OPEN, element);//open operator,remove isolated noise points.
-    morphologyEx(out, out, MORPH_CLOSE, element);//close operator,get connected domain.BMC
-    Mat solid;
-    solid=out.clone();
-    findContours(out,contours,CV_RETR_EXTERNAL,CV_CHAIN_APPROX_NONE);
-    if( contours.size() == 0 )
-    {
-        cout<<"no contour..."<<endl;
-        return 0;
-    }
-    Mat result(out.size(),CV_8U,Scalar(0));
-    drawContours(result,contours,-1,Scalar(255),2);
-    max_tmp=boundingRect(Mat(contours[0]));
-    for(int i=1; i<contours.size(); i++)    
-    {
-        r = boundingRect(Mat(contours[i]));
-        max_tmp=(r.area()>max_tmp.area())?r:max_tmp;
-    }
-    if(max_tmp.area()<ARROW_AREA_MIN||max_tmp.area()>ARROW_AREA_MAX)
-        return 0;
-    Mat pro;
-    solid(max_tmp).copyTo(pro);
-    pro_after=pro.clone();
-    rectangle(result, max_tmp, Scalar(255), 2);
-    cout<<"area "<<max_tmp.area()<<endl;
-    
-    imshow("result",result);
-    if('q'==(char)waitKey(7)) exit(0);
-    
-    //caculate the center of green area
-    Moments mt;
-    mt=moments(pro_after,true);
-    Point center;
-	
-    center.x=mt.m10/mt.m00+max_tmp.tl().x;
-    center.y=mt.m01/mt.m00+max_tmp.tl().y;
-    diff_x=center.x-cx;
-    diff_y=center.y-cy;
-    cout<<"diff x: "<<diff_x<<endl;
-    cout<<"diff y: "<<diff_y<<endl;
-    return 1;
-}
-
 int Color_judge(Mat &src,int area)
 {
     //judge from the center point: BGR
     Mat dst;
+    if(src.rows == 0 && src.cols == 0)
+    {
+        return 0;
+    }
+    //cout<<"color judges 1 src.chan="<<src.channels()<<endl;
     cvtColor( src, dst, CV_BGR2HSV);
     //src = dst;
 
     int x=src.cols/2;
     int y=src.rows/2;
-    cout<<"RGB of Center ("<<y<<","<<x<<")="<<(int)dst.at<Vec3b>(y,x)[0]<<" "<<(int)dst.at<Vec3b>(y,x)[1]<<" "<<(int)dst.at<Vec3b>(y,x)[2]<<endl;
+    //cout<<"RGB of Center ("<<y<<","<<x<<")="<<(int)dst.at<Vec3b>(y,x)[0]<<" "<<(int)dst.at<Vec3b>(y,x)[1]<<" "<<(int)dst.at<Vec3b>(y,x)[2]<<endl;
     if((int)dst.at<Vec3b>(y,x)[0]>80&&(int)dst.at<Vec3b>(y,x)[0]<120) //src.at<Vec3b>(y,x)[2]<50&&src.at<Vec3b>(y,x)[1]>50&&src.at<Vec3b>(y,x)[1]<200&&src.at<Vec3b>(y,x)[0]>100)
     {
         Mat grey;
@@ -492,8 +414,8 @@ int Color_judge(Mat &src,int area)
         {
             sum+=hist.at<float>(i);
         }
-        cout<<"sum: "<<sum<<endl;
-        cout<<"portion: "<<sum/area<<endl;
+        //cout<<"sum: "<<sum<<endl;
+        //cout<<"portion: "<<sum/area<<endl;
         if(sum/area>0.7&&sum/area<0.95)
             return 1;
         else return 0;
@@ -502,7 +424,6 @@ int Color_judge(Mat &src,int area)
         return 0;
 
 }
-
 void Sort_rect(vector<Point>& approx)
 {
     Point tl,tr,br,bl;
@@ -548,9 +469,84 @@ void Sort_rect(vector<Point>& approx)
     cout<<"sorted approx: "<<approx<<endl;
 #endif
 }
-
-bool MarkerDetecter::locateMarker(cv::Mat& img, Viz_t& viz)
+/************************************************************/
+/**********************detect the blue area******************/
+/**********************Input:image with blue arrow inside *****/
+/*********************Output: the center(x,y) ofthe blue area*********/
+int Color_detect(Mat frame, int &diff_x, int &diff_y)
 {
-	return false;
+    vector<Mat> HSVSplit;
+    //Returns a rectangular structuring element of the specified size and shape for morphological operations.
+    Mat element = getStructuringElement(MORPH_RECT, Size(5, 5));
+    vector<vector<Point> > contours;
+    Mat HSVImage;
+    Mat out;
+    Mat HGreen;
+    Mat SGreen;
+    Rect r;
+    Rect max_tmp;
+    resize(frame,frame,Size(640,480));
+    //imshow("src",frame);
+    cvtColor(frame, HSVImage, CV_BGR2HSV);
+    split(HSVImage,HSVSplit);
+    //Hgreen=HSVSplit[0]>lower&&HSVSplit[0]<up , mask, threshold can be fine tuned.
+    inRange(HSVSplit[0], Scalar(80), Scalar(120), HGreen);
+    //inRange(HSVSplit[1], Scalar(80), Scalar(255), SGreen);
+    threshold(HSVSplit[1], SGreen, 80, 255, THRESH_BINARY);    //S channal intensity
+    //bitwise conjunction
+    cv::bitwise_and(HGreen, SGreen, out);
+    morphologyEx(out, out, MORPH_OPEN, element);//open operator,remove isolated noise points.
+    morphologyEx(out, out, MORPH_CLOSE, element);//close operator,get connected domain.BMC
+    Mat solid;
+    solid=out.clone();
+    findContours(out,contours,CV_RETR_EXTERNAL,CV_CHAIN_APPROX_NONE);
+    if( contours.size() == 0 )
+    {
+        diff_x=DIF_CEN;
+        diff_y=0;
+        cout<<"no contour..."<<endl;
+        return 0;
+    }
+    Mat result(out.size(),CV_8U,Scalar(0));
+    drawContours(result,contours,-1,Scalar(255),2);
+    max_tmp=boundingRect(Mat(contours[0]));
+    for(int i=1; i<contours.size(); i++)
+    {
+        r = boundingRect(Mat(contours[i]));
+        max_tmp=(r.area()>max_tmp.area())?r:max_tmp;
+    }
+
+    cout<<"area "<<max_tmp.area()<<endl;
+    if(max_tmp.area()<ARROW_AREA_MIN||max_tmp.area()>ARROW_AREA_MAX)
+    {
+        diff_x=DIF_CEN;
+        cout<<"area...."<<endl;
+        diff_y=0;
+        return 0;
+    }
+    Mat pro;
+    solid(max_tmp).copyTo(pro);
+    pro_after=pro.clone();
+    rectangle(result, max_tmp, Scalar(255), 2);
+
+//#ifdef _SHOW_PHOTO
+    imshow("result",result);
+//#endif
+    // if('q'==(char)waitKey(7)) exit(0);
+
+    //caculate the center of green area
+    Moments mt;
+    mt=moments(pro_after,true);
+    Point center;
+
+    center.x=mt.m10/mt.m00+max_tmp.tl().x;
+    center.y=mt.m01/mt.m00+max_tmp.tl().y;
+    cout<<"width="<<mt.m10/mt.m00<<"  height="<<mt.m01/mt.m00<<endl;
+    diff_x=center.x*800/640-CX;
+    diff_y=center.y*600/480-CY;
+    cout<<"diff x: "<<diff_x<<endl;
+    cout<<"diff y: "<<diff_y<<endl;
+    return 1;
 }
+
 

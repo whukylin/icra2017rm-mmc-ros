@@ -27,32 +27,65 @@
 using namespace std;
 using namespace cv;
 
+
+//Image Processing Procedure HERE
+void imageCallback(const sensor_msgs::ImageConstPtr& msg)
+
+{
+    cv_bridge::CvImagePtr cv_ptr;
+    try
+    {
+        cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+    }
+    catch (cv_bridge::Exception& e)
+    {
+        ROS_ERROR("cv_bridge exception: %s", e.what());
+        return;
+    }
+    /*
+     *
+     * //Image Processing Procedure HERE
+     *
+     * */
+
+    cv::circle(cv_ptr->image, cv::Point(50, 50), 10, CV_RGB(255,0,0));
+
+    // Update GUI Window
+    cv::imshow("TEST", cv_ptr->image);
+    cv::waitKey(1);
+    //JUST FOR TESTING
+
+}
+
+
 int main(int argc, char *argv[])
 {
-	
-  ros::init(argc, argv, "img_deal");
 
-  int spin_rate = 100;
-  
-  ros::NodeHandle np("~");
-  np.param<int>("spin_rate", spin_rate, 100);
-  
-  ros::NodeHandle n;
-  
-  image_transport::ImageTransport it(n);
-  image_transport::Subscriber sub = it.subscribe("camera/img", 1, imageCallback);
-  
-  ros::Rate rate(spin_rate);
+    ros::init(argc, argv, "img_deal");
 
-  while (ros::ok())
-  {
+    int spin_rate = 100;
 
-    ros::spinOnce();
+    ros::NodeHandle np("~");
+    np.param<int>("spin_rate", spin_rate, 100);
 
-    rate.sleep();
-  }
+    ros::NodeHandle n;
 
-  return 0;
+    image_transport::ImageTransport it(n);
+    image_transport::Subscriber sub = it.subscribe("kylinbot/image_raw", 1, imageCallback);
+
+    ros::Rate rate(spin_rate);
+
+    while (ros::ok())
+    {
+
+        ros::spinOnce();
+
+
+
+        rate.sleep();
+    }
+
+    return 0;
 }
 
 

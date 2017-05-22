@@ -1,8 +1,8 @@
-prefix=/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/install
+prefix=/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/install
 
 Name: kylinbot_core
 Description: Description of kylinbot_core
 Version: 0.0.0
-Cflags: -I/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/install/include
-Libs: -L/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/install/lib -lkylinbot_core
+Cflags: -I/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/install/include
+Libs: -L/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/install/lib -lkylinbot_core
 Requires: message_runtime

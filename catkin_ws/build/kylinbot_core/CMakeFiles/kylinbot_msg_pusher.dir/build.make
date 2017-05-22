@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build
+CMAKE_BINARY_DIR = /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/depend.make
@@ -49,42 +49,42 @@ include kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/progress.make
 # Include the compile flags for this target's objects.
 include kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/calib.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/calib.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ahrs.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ahrs.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/calib.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ahrs.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/calib.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ahrs.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbus.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbus.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbus.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbus.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbus.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbus.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbus.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbus.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o.requires
@@ -95,65 +95,88 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o.provides: 
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkednode.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkednode.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/gdf.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/gdf.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkednode.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/gdf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkednode.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/gdf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/maf.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/maf.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbuf.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbuf.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/maf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbuf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/maf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbuf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.i
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.s
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.requires
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.provides
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mecanum.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mecanum.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mecanum.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mecanum.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mecanum.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mecanum.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mecanum.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mecanum.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o.requires
@@ -164,65 +187,19 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o.provide
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkedlist.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkedlist.c
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkedlist.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.i
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkedlist.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.s
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.requires
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.provides
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ekf.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ekf.c
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ekf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.i
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ekf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.s
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.requires
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.provides
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o
-
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rmp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rmp.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rmp.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rmp.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rmp.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rmp.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rmp.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rmp.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o.requires
@@ -233,111 +210,65 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o.provides: k
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/msg.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/msg.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcf.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcf.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/msg.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/msg.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/cbus.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/cbus.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkedlist.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkedlist.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/cbus.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkedlist.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/cbus.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkedlist.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mec.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mec.c
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mec.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.i
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mec.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.s
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.requires
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.provides
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/pid.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/pid.c
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/pid.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.i
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/pid.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.s
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.requires
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.provides
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fun.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fun.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fun.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fun.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fun.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fun.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fun.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fun.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o.requires
@@ -348,19 +279,111 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o.provides: k
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o
 
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/calib.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/calib.c
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/calib.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.i
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/calib.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.s
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.requires
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.provides
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/cbus.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/cbus.c
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/cbus.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.i
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/cbus.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.s
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.requires
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.provides
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/maf.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/maf.c
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/maf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.i
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/maf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.s
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.requires
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.provides
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcf.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcf.c
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.i
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.s
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.requires
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.provides
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o
+
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/crc16.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/crc16.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/crc16.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/crc16.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/crc16.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/crc16.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/crc16.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/crc16.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o.requires
@@ -372,18 +395,18 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o.provides:
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/est.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/est.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/est.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/est.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/est.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/est.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/est.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/est.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o.requires
@@ -394,42 +417,42 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o.provides: k
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbuf.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbuf.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mec.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mec.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbuf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mec.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/dbuf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/mec.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcp.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcp.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcp.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcp.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcp.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcp.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcp.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o.requires
@@ -441,18 +464,18 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o.provides: k
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fifo.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fifo.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fifo.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fifo.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fifo.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fifo.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fifo.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/fifo.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o.requires
@@ -463,88 +486,42 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o.provides: 
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcf.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_19)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcf.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/pid.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/pid.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/pid.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/rcf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/pid.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_20)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.i
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/stack.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.s
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.requires
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.provides
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/gdf.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_21)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/gdf.c
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/gdf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.i
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/gdf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.s
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.requires
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.provides
-
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_22)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcp.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcp.c
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcp.c
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcp.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcp.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcp.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcp.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o.requires
@@ -555,65 +532,88 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o.provides: k
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ahrs.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_23)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ahrs.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/msg.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/msg.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ahrs.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/msg.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ahrs.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/msg.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcf.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_24)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o   -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcf.c
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkednode.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkednode.c
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.i
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkednode.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.i
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/hcf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.s
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/linkednode.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.s
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.requires:
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.requires
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.requires
-	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.provides.build
-.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.provides
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.provides
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ekf.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o   -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ekf.c
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ekf.c > CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.i
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/asp/src/ekf.c -o CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.s
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.requires
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.provides
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/uart/src/uart.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_25)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/uart/src/uart.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/uart/src/uart.cpp
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/uart/src/uart.cpp
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/uart/src/uart.cpp > CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/uart/src/uart.cpp > CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/uart/src/uart.cpp -o CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/uart/src/uart.cpp -o CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o.requires
@@ -624,19 +624,65 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o.provide
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o
 
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/viz/src/MarkerDetection.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/viz/src/MarkerDetection.cpp
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/viz/src/MarkerDetection.cpp > CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.i
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/viz/src/MarkerDetection.cpp -o CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.s
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o.requires
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o.provides
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/viz/src/RMVideoCapture.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/viz/src/RMVideoCapture.cpp
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.i"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/viz/src/RMVideoCapture.cpp > CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.i
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.s"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/viz/src/RMVideoCapture.cpp -o CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.s
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o.requires:
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o.requires
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o.provides: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o.requires
+	$(MAKE) -f kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o.provides.build
+.PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o.provides
+
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o.provides.build: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o
+
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/flags.make
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/kylinbot_msg_pusher.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_26)
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/kylinbot_msg_pusher.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o -c /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/kylinbot_msg_pusher.cpp
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o -c /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/kylinbot_msg_pusher.cpp
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.i"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/kylinbot_msg_pusher.cpp > CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.i
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/kylinbot_msg_pusher.cpp > CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.i
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.s"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/kylinbot_msg_pusher.cpp -o CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.s
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/src/kylinbot_msg_pusher.cpp -o CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.s
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o.requires:
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o.requires
@@ -649,121 +695,152 @@ kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o.p
 
 # Object files for target kylinbot_msg_pusher
 kylinbot_msg_pusher_OBJECTS = \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o" \
-"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o" \
+"CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o" \
 "CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o"
 
 # External object files for target kylinbot_msg_pusher
 kylinbot_msg_pusher_EXTERNAL_OBJECTS =
 
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libroscpp.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/librosconsole.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/librosconsole_log4cxx.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/librosconsole_backend_interface.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/liblog4cxx.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/arm-linux-gnueabihf/libboost_regex.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libxmlrpcpp.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libroscpp_serialization.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/librostime.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/arm-linux-gnueabihf/libboost_date_time.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libcpp_common.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/arm-linux-gnueabihf/libboost_system.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/arm-linux-gnueabihf/libboost_thread.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/arm-linux-gnueabihf/libpthread.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/arm-linux-gnueabihf/libconsole_bridge.so
-/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher"
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kylinbot_msg_pusher.dir/link.txt --verbose=$(VERBOSE)
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build.make
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libimage_transport.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libmessage_filters.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libclass_loader.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/libPocoFoundation.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libroscpp.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libxmlrpcpp.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libroslib.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libcv_bridge.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/librosconsole.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/librosconsole_log4cxx.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/librosconsole_backend_interface.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/liblog4cxx.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libroscpp_serialization.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/librostime.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /opt/ros/indigo/lib/libcpp_common.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kylinbot_msg_pusher.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/build
 
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbus.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mecanum.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rmp.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkedlist.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fun.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/calib.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/cbus.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/maf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/crc16.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/est.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/dbuf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/mec.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcp.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/fifo.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/rcf.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/stack.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/gdf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/pid.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcp.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ahrs.c.o.requires
-kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/msg.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/linkednode.c.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/ekf.c.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/MarkerDetection.cpp.o.requires
+kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/viz/src/RMVideoCapture.cpp.o.requires
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires: kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o.requires
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/requires
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/clean:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && $(CMAKE_COMMAND) -P CMakeFiles/kylinbot_msg_pusher.dir/cmake_clean.cmake
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && $(CMAKE_COMMAND) -P CMakeFiles/kylinbot_msg_pusher.dir/cmake_clean.cmake
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/clean
 
 kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/depend:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kylinbot_core/CMakeFiles/kylinbot_msg_pusher.dir/depend
 

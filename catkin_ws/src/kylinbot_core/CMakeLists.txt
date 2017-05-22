@@ -5,6 +5,8 @@ find_package(catkin REQUIRED COMPONENTS
    roscpp
    rospy
    std_msgs
+        image_transport
+        cv_bridge
    message_generation
 )
 
@@ -34,8 +36,8 @@ find_package(OpenCV REQUIRED)
 
 set(CMAKE_BUILD_TYPE Release)
 
-FILE(GLOB sourcefiles "src/asp/src/*.c" "src/uart/src/*.cpp")
-include_directories(/usr/local/include include include/asp/inc include/uart/inc ${catkin_INCLUDE_DIRS})
+FILE(GLOB sourcefiles "src/asp/src/*.c" "src/uart/src/*.cpp" "src/viz/src/*.cpp" )
+include_directories(/usr/local/include include include/asp/inc include/uart/inc include/viz/inc ${catkin_INCLUDE_DIRS})
 
 link_directories(/usr/local/lib /opt/ros/indigo/lib)
 
@@ -57,4 +59,17 @@ add_dependencies(kylinbot_logic_controller move_base_msgs)
 add_executable(kylinbot_rc_playback ${sourcefiles} src/kylinbot_rc_playback.cpp)
 target_link_libraries(kylinbot_rc_playback  ${catkin_LIBRARIES})
 add_dependencies(kylinbot_rc_playback kylinbot_core_generate_messages_cpp)
+
+add_executable(kylinbot_video_cap ${sourcefiles} src/kylinbot_video_cap.cpp)
+target_link_libraries(kylinbot_video_cap ${OpenCV_LIBS} ${catkin_LIBRARIES} )
+add_dependencies(kylinbot_video_cap kylinbot_core_generate_messages_cpp  image_transport)
+
+add_executable(kylinbot_image_proc ${sourcefiles} src/kylinbot_image_proc.cpp)
+target_link_libraries(kylinbot_image_proc ${OpenCV_LIBS} ${catkin_LIBRARIES} )
+add_dependencies(kylinbot_image_proc kylinbot_core_generate_messages_cpp  image_transport)
+
+
+
+
+
 

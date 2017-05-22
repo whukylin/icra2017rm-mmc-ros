@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build
+CMAKE_BINARY_DIR = /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build
 
 # Utility rule file for roscpp_generate_messages_lisp.
 
@@ -56,10 +56,10 @@ kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/build: roscpp_generat
 .PHONY : kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 
 kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/depend:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kylinbot_core/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 

@@ -16,12 +16,13 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include"
   "/usr/include/opencv"
   "/usr/local/include"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/uart/inc"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/asp/inc"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/uart/inc"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/include/viz/inc"
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

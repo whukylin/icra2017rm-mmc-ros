@@ -1,17 +1,17 @@
 (cl:defpackage kylinbot_core-msg
   (:use )
   (:export
-   "<VIRTUALRC>"
-   "VIRTUALRC"
    "<KYLIN>"
    "KYLIN"
-   "<POSCALIB>"
-   "POSCALIB"
-   "<ZGYRO>"
-   "ZGYRO"
+   "<VIRTUALRC>"
+   "VIRTUALRC"
    "<CBUS>"
    "CBUS"
+   "<POSCALIB>"
+   "POSCALIB"
    "<SONAR>"
    "SONAR"
+   "<ZGYRO>"
+   "ZGYRO"
   ))
 

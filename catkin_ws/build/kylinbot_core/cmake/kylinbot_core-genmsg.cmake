@@ -2,7 +2,7 @@
 
 message(STATUS "kylinbot_core: 6 messages, 0 services")
 
-set(MSG_I_FLAGS "-Ikylinbot_core:/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -15,34 +15,34 @@ add_custom_target(kylinbot_core_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" NAME_WE)
 add_custom_target(_kylinbot_core_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" "kylinbot_core/CBUS"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" NAME_WE)
 add_custom_target(_kylinbot_core_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" NAME_WE)
 add_custom_target(_kylinbot_core_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" NAME_WE)
 add_custom_target(_kylinbot_core_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" NAME_WE)
 add_custom_target(_kylinbot_core_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" "kylinbot_core/CBUS"
 )
 
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" NAME_WE)
 add_custom_target(_kylinbot_core_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kylinbot_core" "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" ""
 )
 
 #
@@ -52,37 +52,37 @@ add_custom_target(_kylinbot_core_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kylinbot_core
-)
-_generate_msg_cpp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_cpp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_cpp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_cpp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_cpp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kylinbot_core
+)
+_generate_msg_cpp(kylinbot_core
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kylinbot_core
@@ -102,17 +102,17 @@ add_custom_target(kylinbot_core_generate_messages_cpp
 add_dependencies(kylinbot_core_generate_messages kylinbot_core_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_cpp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_cpp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_cpp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_cpp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_cpp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_cpp _kylinbot_core_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -125,37 +125,37 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kylinbot_core_generate_messages_cpp
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kylinbot_core
-)
-_generate_msg_lisp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_lisp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_lisp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_lisp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_lisp(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kylinbot_core
+)
+_generate_msg_lisp(kylinbot_core
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kylinbot_core
@@ -175,17 +175,17 @@ add_custom_target(kylinbot_core_generate_messages_lisp
 add_dependencies(kylinbot_core_generate_messages kylinbot_core_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_lisp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_lisp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_lisp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_lisp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_lisp _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_lisp _kylinbot_core_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,37 +198,37 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kylinbot_core_generate_messages_lis
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kylinbot_core
-)
-_generate_msg_py(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_py(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_py(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_py(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kylinbot_core
 )
 _generate_msg_py(kylinbot_core
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kylinbot_core
+)
+_generate_msg_py(kylinbot_core
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kylinbot_core
@@ -248,17 +248,17 @@ add_custom_target(kylinbot_core_generate_messages_py
 add_dependencies(kylinbot_core_generate_messages kylinbot_core_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_py _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_py _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_py _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_py _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_py _kylinbot_core_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg" NAME_WE)
+get_filename_component(_filename "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg" NAME_WE)
 add_dependencies(kylinbot_core_generate_messages_py _kylinbot_core_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
