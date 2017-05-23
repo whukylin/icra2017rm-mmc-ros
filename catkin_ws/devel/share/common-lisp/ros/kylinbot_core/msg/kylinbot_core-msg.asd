@@ -2,7 +2,8 @@
 (cl:in-package :asdf)
 
 (defsystem "kylinbot_core-msg"
-  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :std_msgs-msg
+)
   :components ((:file "_package")
     (:file "Kylin" :depends-on ("_package_Kylin"))
     (:file "_package_Kylin" :depends-on ("_package"))
@@ -12,6 +13,8 @@
     (:file "_package_CBUS" :depends-on ("_package"))
     (:file "PosCalib" :depends-on ("_package_PosCalib"))
     (:file "_package_PosCalib" :depends-on ("_package"))
+    (:file "DetectionResult" :depends-on ("_package_DetectionResult"))
+    (:file "_package_DetectionResult" :depends-on ("_package"))
     (:file "Sonar" :depends-on ("_package_Sonar"))
     (:file "_package_Sonar" :depends-on ("_package"))
     (:file "ZGyro" :depends-on ("_package_ZGyro"))

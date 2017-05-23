@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/kylinbot_core_generate_messages_py"
   "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core/msg/_PosCalib.py"
+  "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core/msg/_DetectionResult.py"
   "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core/msg/_Sonar.py"
   "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core/msg/_CBUS.py"
   "/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core/msg/_VirtualRC.py"

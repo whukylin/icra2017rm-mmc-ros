@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build
 include kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp.dir/progress.make
 
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/PosCalib.h
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/DetectionResult.h
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Sonar.h
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/CBUS.h
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/VirtualRC.h
@@ -59,24 +60,32 @@ kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp: /home/kelfor/Docum
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kylinbot_core/PosCalib.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/DetectionResult.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/DetectionResult.h: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/DetectionResult.msg
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/DetectionResult.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/DetectionResult.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kylinbot_core/DetectionResult.msg"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/DetectionResult.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core -e /opt/ros/indigo/share/gencpp/cmake/..
+
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Sonar.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Sonar.h: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Sonar.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kylinbot_core/Sonar.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/CBUS.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/CBUS.h: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/CBUS.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kylinbot_core/CBUS.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/VirtualRC.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/VirtualRC.h: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/VirtualRC.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kylinbot_core/VirtualRC.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -84,19 +93,20 @@ kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp: /home/kelfor/Docum
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Kylin.h: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Kylin.h: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Kylin.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kylinbot_core/Kylin.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/ZGyro.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/ZGyro.h: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/ZGyro.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kylinbot_core/ZGyro.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core -e /opt/ros/indigo/share/gencpp/cmake/..
 
 kylinbot_core_generate_messages_cpp: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_cpp
 kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/PosCalib.h
+kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/DetectionResult.h
 kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/Sonar.h
 kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/CBUS.h
 kylinbot_core_generate_messages_cpp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core/VirtualRC.h

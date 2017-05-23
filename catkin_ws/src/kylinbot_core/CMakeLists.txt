@@ -18,6 +18,7 @@ add_message_files(
   Sonar.msg
   VirtualRC.msg
   ZGyro.msg
+        DetectionResult.msg
 )
 
 generate_messages(

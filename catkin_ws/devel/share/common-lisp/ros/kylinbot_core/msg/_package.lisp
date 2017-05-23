@@ -9,6 +9,8 @@
    "CBUS"
    "<POSCALIB>"
    "POSCALIB"
+   "<DETECTIONRESULT>"
+   "DETECTIONRESULT"
    "<SONAR>"
    "SONAR"
    "<ZGYRO>"

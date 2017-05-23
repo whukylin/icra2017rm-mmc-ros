@@ -254,6 +254,19 @@ _kylinbot_core_generate_messages_check_deps_CBUS/fast:
 .PHONY : _kylinbot_core_generate_messages_check_deps_CBUS/fast
 
 #=============================================================================
+# Target rules for targets named _kylinbot_core_generate_messages_check_deps_DetectionResult
+
+# Build rule for target.
+_kylinbot_core_generate_messages_check_deps_DetectionResult: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _kylinbot_core_generate_messages_check_deps_DetectionResult
+.PHONY : _kylinbot_core_generate_messages_check_deps_DetectionResult
+
+# fast build rule for target.
+_kylinbot_core_generate_messages_check_deps_DetectionResult/fast:
+	$(MAKE) -f kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir/build.make kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir/build
+.PHONY : _kylinbot_core_generate_messages_check_deps_DetectionResult/fast
+
+#=============================================================================
 # Target rules for targets named _kylinbot_core_generate_messages_check_deps_Kylin
 
 # Build rule for target.
@@ -703,6 +716,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _kylinbot_core_generate_messages_check_deps_CBUS"
+	@echo "... _kylinbot_core_generate_messages_check_deps_DetectionResult"
 	@echo "... _kylinbot_core_generate_messages_check_deps_Kylin"
 	@echo "... _kylinbot_core_generate_messages_check_deps_PosCalib"
 	@echo "... _kylinbot_core_generate_messages_check_deps_Sonar"

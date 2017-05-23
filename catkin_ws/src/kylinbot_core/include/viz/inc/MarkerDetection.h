@@ -17,11 +17,24 @@
 #ifndef __MARKER_DETECTION_H__
 #define __MARKER_DETECTION_H__
 //Image processing
+
 #include "opencv2/opencv.hpp"
-#define DIF_CEN 190
-#define PROP 1.5
-#define CX   343   //To change to calibration parameter.
-#define CY   320;   //the same with cameraMatrix.cx,cy
+#include <iostream>
+#include <stdio.h>
+#include<string.h>
+#include<malloc.h>
+#include<sys/types.h>
+#include<sys/stat.h>
+#include<fcntl.h>
+#include<unistd.h>
+#include<termios.h>
+#include"math.h"
+
+#include <errno.h>
+#include <sys/ioctl.h>
+#include <linux/videodev2.h>
+#include "opencv2/opencv.hpp"
+
 //#define _SHOW_PHOTO
 //#define _SHOW_OUTPUT
 //#define Camera_One
@@ -42,14 +55,36 @@ public:
 	}
 };
 
-void findSquares( Mat src,const Mat& image, vector<vector<Point> >& squares );
-void drawSquares( Mat& image, const vector<vector<Point> >& squares );
-void LocationMarkes(const vector<vector<Point> >& squares);
-void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_br,Point3f world_pnt_bl,Point2f pnt_tl_src,Point2f pnt_tr_src,Point2f pnt_br_src,Point2f pnt_bl_src);
-int Color_judge(Mat &src,int area);
+
+class MarkerDetector
+{
+public:
+	MarkerDetector();
+	~MarkerDetector(){};
+	void findSquares( Mat src,const Mat& image, vector<vector<Point> >& squares );
+	void drawSquares( Mat& image, const vector<vector<Point> >& squares );
+	void LocationMarkes(const vector<vector<Point> >& squares);
+	void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_br,Point3f world_pnt_bl,Point2f pnt_tl_src,Point2f pnt_tr_src,Point2f pnt_br_src,Point2f pnt_bl_src);
+	int Color_judge(Mat &src,int area);
+	int Color_detect(Mat frame, int &diff_x, int &diff_y);
+
+	float get_ry(){return ry;}
+    float get_rz(){return rz;}
+    float get_rx(){return rx;}
+
+    float get_tx(){return tx;}
+    float get_ty(){return ty;}
+    float get_tz(){return tz;}
+
+private:
+	float ry,rz,rx;
+	float tx,ty,tz;
+
+protected:
+};
+
 void Sort_rect(vector<Point>& approx);
 double angle( Point pt1, Point pt2, Point pt0 );
-int Color_detect(Mat frame, int &diff_x, int &diff_y);
 #endif
 
 

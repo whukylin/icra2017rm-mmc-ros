@@ -1,26 +1,13 @@
 #include "MarkerDetection.h"
-#include "opencv2/opencv.hpp"
-#include <iostream>
-#include <stdio.h>
-#include<string.h>
-#include<malloc.h>
-#include<sys/types.h>
-#include<sys/stat.h>
-#include<fcntl.h>
-#include<unistd.h>
-#include<termios.h>
-#include"math.h"
 
-#include <errno.h>
-#include <sys/ioctl.h>
-#include <linux/videodev2.h>
 using namespace cv;
 
 using namespace std;
 const char* wndname = "Square Detection Demo";
-volatile double ry,rz,rx;
-volatile double tx,ty,tz;
-
+#define DIF_CEN 190
+#define PROP 1.5
+#define CX   343   //To change to calibration parameter.
+#define CY   320;   //the same with cameraMatrix.cx,cy
 int grey_thresh=100;
 int numframe=0;   //frame numbers
 int lost_numframe=0;
@@ -50,16 +37,18 @@ Point3f world_pnt_tr(65,-85,0);
 Point3f world_pnt_br(65,85,0);
 Point3f world_pnt_bl(-65,85,0);
 
-double angle( Point pt1, Point pt2, Point pt0 )
+MarkerDetector::MarkerDetector()
 {
-    double dx1 = pt1.x - pt0.x;
-    double dy1 = pt1.y - pt0.y;
-    double dx2 = pt2.x - pt0.x;
-    double dy2 = pt2.y - pt0.y;
-    return (dx1*dx2 + dy1*dy2)/sqrt((dx1*dx1 + dy1*dy1)*(dx2*dx2 + dy2*dy2) + 1e-10);
-}
 
-void findSquares( Mat src,const Mat& image, vector<vector<Point> >& squares )
+    this->rx = 0.0;
+    this->ry = 0.0;
+    this->rz = 0.0;
+    this->tx = 0.0;
+    this->ty = 0.0;
+    this->tz = 0.0;
+
+}
+void  MarkerDetector::findSquares( Mat src,const Mat& image, vector<vector<Point> >& squares )
 {
     Mat pyr, timg, gray0(image.size(), CV_8U),Src_HSV(image.size(), CV_8U), gray;
 
@@ -242,7 +231,7 @@ void findSquares( Mat src,const Mat& image, vector<vector<Point> >& squares )
         }
     }
 }
-void drawSquares( Mat& image, const vector<vector<Point> >& squares )
+void MarkerDetector::drawSquares( Mat& image, const vector<vector<Point> >& squares )
 {
     for( size_t i = 0; i < squares.size(); i++ )
     {
@@ -310,7 +299,7 @@ void drawSquares( Mat& image, const vector<vector<Point> >& squares )
 #endif
 }
 
-void LocationMarkes(const vector<vector<Point> >& squares)
+void MarkerDetector::LocationMarkes(const vector<vector<Point> >& squares)
 {
     if(squares.size()>0)
     {
@@ -335,7 +324,7 @@ void LocationMarkes(const vector<vector<Point> >& squares)
 
 
 
-void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_br,Point3f world_pnt_bl,Point2f pnt_tl_src,Point2f pnt_tr_src,Point2f pnt_br_src,Point2f pnt_bl_src)
+void MarkerDetector::Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_br,Point3f world_pnt_bl,Point2f pnt_tl_src,Point2f pnt_tr_src,Point2f pnt_br_src,Point2f pnt_bl_src)
 {
     vector<Point3f> Points3D;
     vector<Point2f> Points2D;
@@ -369,12 +358,12 @@ void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_
     double thetaz = atan2(r21, r11) / CV_PI * 180;
     double thetay = atan2(-1 * r31, sqrt(r32*r32 + r33*r33)) / CV_PI * 180;
     double thetax = atan2(r32, r33) / CV_PI * 180;
-    ry=thetay*PROP;
-    rz=thetaz;
-    rx=thetax;
-    tx=tvec.ptr<double>(0)[0];
-    ty=tvec.ptr<double>(1)[0];
-    tz=tvec.ptr<double>(2)[0];
+    this->ry=thetay*PROP;
+    this->rz=thetaz;
+    this->rx=thetax;
+    this->tx=tvec.ptr<double>(0)[0];
+    this->ty=tvec.ptr<double>(1)[0];
+    this->tz=tvec.ptr<double>(2)[0];
 #ifdef _SHOW_OUTPUT
     cout<<"tvec: "<<tvec<<endl;
     cout<<"thetay: "<<thetay<<endl;
@@ -383,7 +372,7 @@ void Calcu_attitude(Point3f world_pnt_tl,Point3f world_pnt_tr,Point3f world_pnt_
 #endif
 
 }
-int Color_judge(Mat &src,int area)
+int MarkerDetector::Color_judge(Mat &src,int area)
 {
     //judge from the center point: BGR
     Mat dst;
@@ -424,56 +413,12 @@ int Color_judge(Mat &src,int area)
         return 0;
 
 }
-void Sort_rect(vector<Point>& approx)
-{
-    Point tl,tr,br,bl;
-    vector<MyPoint> my_rect;
-    my_rect.push_back(approx[0]);
-    my_rect.push_back(approx[1]);
-    my_rect.push_back(approx[2]);
-    my_rect.push_back(approx[3]);
-    sort(my_rect.begin(),my_rect.end());
-    if(my_rect[0].y<my_rect[1].y)
-    {
-        tl.x=my_rect[0].x;
-        tl.y=my_rect[0].y;
-        bl.x=my_rect[1].x;
-        bl.y=my_rect[1].y;
-    }
-    else
-    {
-        tl.x=my_rect[1].x;
-        tl.y=my_rect[1].y;
-        bl.x=my_rect[0].x;
-        bl.y=my_rect[0].y;
-    }
-    if(my_rect[2].y<my_rect[3].y)
-    {
-        tr.x=my_rect[2].x;
-        tr.y=my_rect[2].y;
-        br.x=my_rect[3].x;
-        br.y=my_rect[3].y;
-    }
-    else
-    {
-        tr.x=my_rect[3].x;
-        tr.y=my_rect[3].y;
-        br.x=my_rect[2].x;
-        br.y=my_rect[2].y;
-    }
-    approx[0]=tl;
-    approx[1]=tr;
-    approx[2]=br;
-    approx[3]=bl;
-#ifdef _SHOW_OUTPUT
-    cout<<"sorted approx: "<<approx<<endl;
-#endif
-}
+
 /************************************************************/
 /**********************detect the blue area******************/
 /**********************Input:image with blue arrow inside *****/
 /*********************Output: the center(x,y) ofthe blue area*********/
-int Color_detect(Mat frame, int &diff_x, int &diff_y)
+int MarkerDetector::Color_detect(Mat frame, int &diff_x, int &diff_y)
 {
     vector<Mat> HSVSplit;
     //Returns a rectangular structuring element of the specified size and shape for morphological operations.
@@ -549,4 +494,58 @@ int Color_detect(Mat frame, int &diff_x, int &diff_y)
     return 1;
 }
 
+double angle( Point pt1, Point pt2, Point pt0 )
+{
+    double dx1 = pt1.x - pt0.x;
+    double dy1 = pt1.y - pt0.y;
+    double dx2 = pt2.x - pt0.x;
+    double dy2 = pt2.y - pt0.y;
+    return (dx1*dx2 + dy1*dy2)/sqrt((dx1*dx1 + dy1*dy1)*(dx2*dx2 + dy2*dy2) + 1e-10);
+}
 
+
+void Sort_rect(vector<Point>& approx)
+{
+    Point tl,tr,br,bl;
+    vector<MyPoint> my_rect;
+    my_rect.push_back(approx[0]);
+    my_rect.push_back(approx[1]);
+    my_rect.push_back(approx[2]);
+    my_rect.push_back(approx[3]);
+    sort(my_rect.begin(),my_rect.end());
+    if(my_rect[0].y<my_rect[1].y)
+    {
+        tl.x=my_rect[0].x;
+        tl.y=my_rect[0].y;
+        bl.x=my_rect[1].x;
+        bl.y=my_rect[1].y;
+    }
+    else
+    {
+        tl.x=my_rect[1].x;
+        tl.y=my_rect[1].y;
+        bl.x=my_rect[0].x;
+        bl.y=my_rect[0].y;
+    }
+    if(my_rect[2].y<my_rect[3].y)
+    {
+        tr.x=my_rect[2].x;
+        tr.y=my_rect[2].y;
+        br.x=my_rect[3].x;
+        br.y=my_rect[3].y;
+    }
+    else
+    {
+        tr.x=my_rect[3].x;
+        tr.y=my_rect[3].y;
+        br.x=my_rect[2].x;
+        br.y=my_rect[2].y;
+    }
+    approx[0]=tl;
+    approx[1]=tr;
+    approx[2]=br;
+    approx[3]=bl;
+#ifdef _SHOW_OUTPUT
+    cout<<"sorted approx: "<<approx<<endl;
+#endif
+}

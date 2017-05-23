@@ -164,6 +164,20 @@ _kylinbot_core_generate_messages_check_deps_CBUS/fast:
 .PHONY : _kylinbot_core_generate_messages_check_deps_CBUS/fast
 
 # Convenience name for target.
+kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir/rule:
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir/rule
+.PHONY : kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir/rule
+
+# Convenience name for target.
+_kylinbot_core_generate_messages_check_deps_DetectionResult: kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir/rule
+.PHONY : _kylinbot_core_generate_messages_check_deps_DetectionResult
+
+# fast build rule for target.
+_kylinbot_core_generate_messages_check_deps_DetectionResult/fast:
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir/build.make kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir/build
+.PHONY : _kylinbot_core_generate_messages_check_deps_DetectionResult/fast
+
+# Convenience name for target.
 kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir/rule:
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir/rule
 .PHONY : kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir/rule
@@ -1829,6 +1843,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... _kylinbot_core_generate_messages_check_deps_CBUS"
+	@echo "... _kylinbot_core_generate_messages_check_deps_DetectionResult"
 	@echo "... _kylinbot_core_generate_messages_check_deps_Kylin"
 	@echo "... _kylinbot_core_generate_messages_check_deps_PosCalib"
 	@echo "... _kylinbot_core_generate_messages_check_deps_Sonar"

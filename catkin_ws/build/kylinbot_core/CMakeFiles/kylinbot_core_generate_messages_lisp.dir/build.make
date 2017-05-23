@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build
 include kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp.dir/progress.make
 
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/PosCalib.lisp
+kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/DetectionResult.lisp
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/Sonar.lisp
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/CBUS.lisp
 kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/VirtualRC.lisp
@@ -58,39 +59,47 @@ kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp: /home/kelfor/Docu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kylinbot_core/PosCalib.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg
 
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/DetectionResult.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/DetectionResult.lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/DetectionResult.msg
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/DetectionResult.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kylinbot_core/DetectionResult.msg"
+	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/DetectionResult.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg
+
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/Sonar.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/Sonar.lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kylinbot_core/Sonar.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg
 
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/CBUS.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/CBUS.lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kylinbot_core/CBUS.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg
 
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/VirtualRC.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/VirtualRC.lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kylinbot_core/VirtualRC.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg
 
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/Kylin.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/Kylin.lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/Kylin.lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kylinbot_core/Kylin.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg
 
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/ZGyro.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/ZGyro.lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kylinbot_core/ZGyro.msg"
 	cd /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg -Ikylinbot_core:/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p kylinbot_core -o /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg
 
 kylinbot_core_generate_messages_lisp: kylinbot_core/CMakeFiles/kylinbot_core_generate_messages_lisp
 kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/PosCalib.lisp
+kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/DetectionResult.lisp
 kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/Sonar.lisp
 kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/CBUS.lisp
 kylinbot_core_generate_messages_lisp: /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core/msg/VirtualRC.lisp

@@ -1,4 +1,5 @@
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_CBUS.dir
+/home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_DetectionResult.dir
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Kylin.dir
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_PosCalib.dir
 /home/kelfor/Documents/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/_kylinbot_core_generate_messages_check_deps_Sonar.dir
