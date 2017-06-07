@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core
+# Install script for directory: /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,51 +34,51 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kylinbot_core/msg" TYPE FILE FILES
-    "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
-    "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg"
-    "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg"
-    "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg"
-    "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg"
-    "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg"
+    "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/CBUS.msg"
+    "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Kylin.msg"
+    "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/PosCalib.msg"
+    "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/Sonar.msg"
+    "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/VirtualRC.msg"
+    "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg/ZGyro.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kylinbot_core/cmake" TYPE FILE FILES "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_core-msg-paths.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kylinbot_core/cmake" TYPE FILE FILES "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_core-msg-paths.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/include/kylinbot_core")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/share/common-lisp/ros/kylinbot_core")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/lib/python2.7/dist-packages/kylinbot_core")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_core.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_core.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kylinbot_core/cmake" TYPE FILE FILES "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_core-msg-extras.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kylinbot_core/cmake" TYPE FILE FILES "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_core-msg-extras.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kylinbot_core/cmake" TYPE FILE FILES
-    "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_coreConfig.cmake"
-    "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_coreConfig-version.cmake"
+    "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_coreConfig.cmake"
+    "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/catkin_generated/installspace/kylinbot_coreConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kylinbot_core" TYPE FILE FILES "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kylinbot_core" TYPE FILE FILES "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

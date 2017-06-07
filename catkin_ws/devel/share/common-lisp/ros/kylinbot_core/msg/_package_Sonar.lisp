@@ -9,4 +9,6 @@
           LEFT
           RIGHT-VAL
           RIGHT
+          ZPOSE-VAL
+          ZPOSE
 ))

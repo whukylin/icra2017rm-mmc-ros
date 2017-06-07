@@ -25,8 +25,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/kylinbot_msg_pusher.dir/src/asp/src/hcf.c.o"
   "CMakeFiles/kylinbot_msg_pusher.dir/src/uart/src/uart.cpp.o"
   "CMakeFiles/kylinbot_msg_pusher.dir/src/kylinbot_msg_pusher.cpp.o"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher.pdb"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher"
+  "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher.pdb"
+  "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_msg_pusher"
 )
 
 # Per-language clean rules from dependency scanning.

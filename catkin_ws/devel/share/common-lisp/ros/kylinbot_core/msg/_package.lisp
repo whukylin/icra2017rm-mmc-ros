@@ -5,6 +5,8 @@
    "VIRTUALRC"
    "<KYLIN>"
    "KYLIN"
+   "<ZPOSE>"
+   "ZPOSE"
    "<POSCALIB>"
    "POSCALIB"
    "<ZGYRO>"

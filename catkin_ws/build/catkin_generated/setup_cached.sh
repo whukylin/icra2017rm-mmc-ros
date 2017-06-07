@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build"
+export PWD="/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build"

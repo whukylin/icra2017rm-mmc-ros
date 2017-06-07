@@ -44,6 +44,7 @@ void cmdCallback(const kylinbot_core::Kylin::ConstPtr& kylin)
   if (FIFO_GetFree(&tx_fifo) >= msg_head_kylin.attr.length + MSG_LEN_EXT) {
     
     kylinMsg.frame_id++;
+	kylinMsg.cbus.fs = kylin->cbus.fs;
     kylinMsg.cbus.cp.x = kylin->cbus.px;
     kylinMsg.cbus.cp.y = kylin->cbus.py;
     kylinMsg.cbus.cp.z = kylin->cbus.pz;

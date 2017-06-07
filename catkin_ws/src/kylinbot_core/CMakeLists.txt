@@ -35,7 +35,7 @@ find_package(OpenCV REQUIRED)
 set(CMAKE_BUILD_TYPE Release)
 
 FILE(GLOB sourcefiles "src/asp/src/*.c" "src/uart/src/*.cpp")
-include_directories(/usr/local/include include include/asp/inc include/uart/inc ${catkin_INCLUDE_DIRS})
+include_directories(/usr/local/include /opt/ros/indigo/include include/asp/inc include/uart/inc ${catkin_INCLUDE_DIRS})
 
 link_directories(/usr/local/lib /opt/ros/indigo/lib)
 

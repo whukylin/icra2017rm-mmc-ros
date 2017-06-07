@@ -116,18 +116,18 @@ void publishOdomeMsg(ros::Publisher *pub, const KylinMsg_t* kylinMsg)
   //float py = -kylinMsg->cbus.cp.x / KYLIN_MSG_VALUE_SCALE;
   //float px = kylinMsg->cbus.cp.y / KYLIN_MSG_VALUE_SCALE;
   //float pz = -kylinMsg->cbus.cp.z / KYLIN_MSG_VALUE_SCALE;
-  float cvy = -kylinMsg->cbus.cv.x / KYLIN_MSG_VALUE_SCALE;
-  float cvx = kylinMsg->cbus.cv.y / KYLIN_MSG_VALUE_SCALE;
-  float cvz = -kylinMsg->cbus.cv.z / KYLIN_MSG_VALUE_SCALE;
+  float cvx = kylinMsg->cbus.cv.x / KYLIN_MSG_VALUE_SCALE;
+  float cvy = kylinMsg->cbus.cv.y / KYLIN_MSG_VALUE_SCALE;
+  float cvz = kylinMsg->cbus.cv.z / KYLIN_MSG_VALUE_SCALE;
   
   current_time = ros::Time::now();
-  double dt = (current_time - last_time).toSec();
+  double dt = current_time - last_time;
   
   last_time = current_time;
   
-  double vx = cvx * cos(pz) - cvy * sin(pz);
-  double vy = cvx * sin(pz) + cvy * cos(pz);
-  double vz = cvz;
+  double vx = cvx * sin(pz) - cvy * cos(pz);
+  double vy = cvx * cos(pz) + cvy * sin(pz);
+  double vz = -cvz;
   
   double delta_px = vx * dt;
   double delta_py = vy * dt;

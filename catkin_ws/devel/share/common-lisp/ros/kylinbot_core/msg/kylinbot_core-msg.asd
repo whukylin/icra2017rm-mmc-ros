@@ -8,6 +8,8 @@
     (:file "_package_VirtualRC" :depends-on ("_package"))
     (:file "Kylin" :depends-on ("_package_Kylin"))
     (:file "_package_Kylin" :depends-on ("_package"))
+    (:file "ZPose" :depends-on ("_package_ZPose"))
+    (:file "_package_ZPose" :depends-on ("_package"))
     (:file "PosCalib" :depends-on ("_package_PosCalib"))
     (:file "_package_PosCalib" :depends-on ("_package"))
     (:file "ZGyro" :depends-on ("_package_ZGyro"))

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/setup.sh
+    local-name: /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/setup.sh

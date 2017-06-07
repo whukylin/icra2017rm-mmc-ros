@@ -31,7 +31,12 @@
     :reader right
     :initarg :right
     :type cl:fixnum
-    :initform 0))
+    :initform 0)
+   (zpose
+    :reader zpose
+    :initarg :zpose
+    :type cl:float
+    :initform 0.0))
 )
 
 (cl:defclass Sonar (<Sonar>)
@@ -66,6 +71,11 @@
 (cl:defmethod right-val ((m <Sonar>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader kylinbot_core-msg:right-val is deprecated.  Use kylinbot_core-msg:right instead.")
   (right m))
+
+(cl:ensure-generic-function 'zpose-val :lambda-list '(m))
+(cl:defmethod zpose-val ((m <Sonar>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader kylinbot_core-msg:zpose-val is deprecated.  Use kylinbot_core-msg:zpose instead.")
+  (zpose m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <Sonar>) ostream)
   "Serializes a message object of type '<Sonar>"
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'frame_id)) ostream)
@@ -80,6 +90,11 @@
   (cl:write-byte (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'left)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'right)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'right)) ostream)
+  (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'zpose))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream))
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <Sonar>) istream)
   "Deserializes a message object of type '<Sonar>"
@@ -95,6 +110,12 @@
     (cl:setf (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'left)) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'right)) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'right)) (cl:read-byte istream))
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'zpose) (roslisp-utils:decode-single-float-bits bits)))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<Sonar>)))
@@ -105,16 +126,16 @@
   "kylinbot_core/Sonar")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<Sonar>)))
   "Returns md5sum for a message object of type '<Sonar>"
-  "32e3008d8c0744f5206e9f75d97600c9")
+  "0af23e4671c4e7eba065e347a2f9b619")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'Sonar)))
   "Returns md5sum for a message object of type 'Sonar"
-  "32e3008d8c0744f5206e9f75d97600c9")
+  "0af23e4671c4e7eba065e347a2f9b619")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<Sonar>)))
   "Returns full string definition for message of type '<Sonar>"
-  (cl:format cl:nil "uint32 frame_id~%uint16 fixed~%uint16 moble~%uint16 left~%uint16 right~%~%~%"))
+  (cl:format cl:nil "uint32 frame_id~%uint16 fixed~%uint16 moble~%uint16 left~%uint16 right~%float32 zpose~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'Sonar)))
   "Returns full string definition for message of type 'Sonar"
-  (cl:format cl:nil "uint32 frame_id~%uint16 fixed~%uint16 moble~%uint16 left~%uint16 right~%~%~%"))
+  (cl:format cl:nil "uint32 frame_id~%uint16 fixed~%uint16 moble~%uint16 left~%uint16 right~%float32 zpose~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <Sonar>))
   (cl:+ 0
      4
@@ -122,6 +143,7 @@
      2
      2
      2
+     4
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <Sonar>))
   "Converts a ROS message object to a list"
@@ -131,4 +153,5 @@
     (cl:cons ':moble (moble msg))
     (cl:cons ':left (left msg))
     (cl:cons ':right (right msg))
+    (cl:cons ':zpose (zpose msg))
 ))

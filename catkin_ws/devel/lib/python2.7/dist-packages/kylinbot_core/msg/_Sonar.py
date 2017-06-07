@@ -7,7 +7,7 @@ import struct
 
 
 class Sonar(genpy.Message):
-  _md5sum = "32e3008d8c0744f5206e9f75d97600c9"
+  _md5sum = "0af23e4671c4e7eba065e347a2f9b619"
   _type = "kylinbot_core/Sonar"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """uint32 frame_id
@@ -15,9 +15,10 @@ uint16 fixed
 uint16 moble
 uint16 left
 uint16 right
+float32 zpose
 """
-  __slots__ = ['frame_id','fixed','moble','left','right']
-  _slot_types = ['uint32','uint16','uint16','uint16','uint16']
+  __slots__ = ['frame_id','fixed','moble','left','right','zpose']
+  _slot_types = ['uint32','uint16','uint16','uint16','uint16','float32']
 
   def __init__(self, *args, **kwds):
     """
@@ -27,7 +28,7 @@ uint16 right
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       frame_id,fixed,moble,left,right
+       frame_id,fixed,moble,left,right,zpose
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -46,12 +47,15 @@ uint16 right
         self.left = 0
       if self.right is None:
         self.right = 0
+      if self.zpose is None:
+        self.zpose = 0.
     else:
       self.frame_id = 0
       self.fixed = 0
       self.moble = 0
       self.left = 0
       self.right = 0
+      self.zpose = 0.
 
   def _get_types(self):
     """
@@ -66,7 +70,7 @@ uint16 right
     """
     try:
       _x = self
-      buff.write(_struct_I4H.pack(_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right))
+      buff.write(_struct_I4Hf.pack(_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right, _x.zpose))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -79,8 +83,8 @@ uint16 right
       end = 0
       _x = self
       start = end
-      end += 12
-      (_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right,) = _struct_I4H.unpack(str[start:end])
+      end += 16
+      (_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right, _x.zpose,) = _struct_I4Hf.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -94,7 +98,7 @@ uint16 right
     """
     try:
       _x = self
-      buff.write(_struct_I4H.pack(_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right))
+      buff.write(_struct_I4Hf.pack(_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right, _x.zpose))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -108,11 +112,11 @@ uint16 right
       end = 0
       _x = self
       start = end
-      end += 12
-      (_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right,) = _struct_I4H.unpack(str[start:end])
+      end += 16
+      (_x.frame_id, _x.fixed, _x.moble, _x.left, _x.right, _x.zpose,) = _struct_I4Hf.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_I4H = struct.Struct("<I4H")
+_struct_I4Hf = struct.Struct("<I4Hf")

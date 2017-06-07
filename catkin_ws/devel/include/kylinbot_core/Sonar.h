@@ -28,14 +28,16 @@ struct Sonar_
     , fixed(0)
     , moble(0)
     , left(0)
-    , right(0)  {
+    , right(0)
+    , zpose(0.0)  {
     }
   Sonar_(const ContainerAllocator& _alloc)
     : frame_id(0)
     , fixed(0)
     , moble(0)
     , left(0)
-    , right(0)  {
+    , right(0)
+    , zpose(0.0)  {
   (void)_alloc;
     }
 
@@ -55,6 +57,9 @@ struct Sonar_
 
    typedef uint16_t _right_type;
   _right_type right;
+
+   typedef float _zpose_type;
+  _zpose_type zpose;
 
 
 
@@ -90,7 +95,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/indigo/share/std_msgs/cmake/../msg'], 'kylinbot_core': ['/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg']}
+// {'std_msgs': ['/opt/ros/indigo/share/std_msgs/cmake/../msg'], 'kylinbot_core': ['/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core/msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -133,12 +138,12 @@ struct MD5Sum< ::kylinbot_core::Sonar_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "32e3008d8c0744f5206e9f75d97600c9";
+    return "0af23e4671c4e7eba065e347a2f9b619";
   }
 
   static const char* value(const ::kylinbot_core::Sonar_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x32e3008d8c0744f5ULL;
-  static const uint64_t static_value2 = 0x206e9f75d97600c9ULL;
+  static const uint64_t static_value1 = 0x0af23e4671c4e7ebULL;
+  static const uint64_t static_value2 = 0xa065e347a2f9b619ULL;
 };
 
 template<class ContainerAllocator>
@@ -162,6 +167,7 @@ uint16 fixed\n\
 uint16 moble\n\
 uint16 left\n\
 uint16 right\n\
+float32 zpose\n\
 ";
   }
 
@@ -185,6 +191,7 @@ namespace serialization
       stream.next(m.moble);
       stream.next(m.left);
       stream.next(m.right);
+      stream.next(m.zpose);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -213,6 +220,8 @@ struct Printer< ::kylinbot_core::Sonar_<ContainerAllocator> >
     Printer<uint16_t>::stream(s, indent + "  ", v.left);
     s << indent << "right: ";
     Printer<uint16_t>::stream(s, indent + "  ", v.right);
+    s << indent << "zpose: ";
+    Printer<float>::stream(s, indent + "  ", v.zpose);
   }
 };
 

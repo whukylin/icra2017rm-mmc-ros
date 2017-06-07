@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -56,10 +56,10 @@ kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs_gene
 .PHONY : kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core /home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/src/kylinbot_core /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core /home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/build/kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kylinbot_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

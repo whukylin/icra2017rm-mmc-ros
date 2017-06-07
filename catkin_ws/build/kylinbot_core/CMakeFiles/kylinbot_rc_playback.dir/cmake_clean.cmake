@@ -25,8 +25,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/kylinbot_rc_playback.dir/src/asp/src/hcf.c.o"
   "CMakeFiles/kylinbot_rc_playback.dir/src/uart/src/uart.cpp.o"
   "CMakeFiles/kylinbot_rc_playback.dir/src/kylinbot_rc_playback.cpp.o"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_rc_playback.pdb"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_rc_playback"
+  "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_rc_playback.pdb"
+  "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_rc_playback"
 )
 
 # Per-language clean rules from dependency scanning.

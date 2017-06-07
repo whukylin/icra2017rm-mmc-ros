@@ -25,8 +25,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/ahrs.c.o"
   "CMakeFiles/kylinbot_logic_controller.dir/src/asp/src/hcf.c.o"
   "CMakeFiles/kylinbot_logic_controller.dir/src/uart/src/uart.cpp.o"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_logic_controller.pdb"
-  "/home/ubuntu/workspace/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_logic_controller"
+  "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_logic_controller.pdb"
+  "/home/ubuntu/workspace/ros/icra2017rm-mmc-ros/catkin_ws/devel/lib/kylinbot_core/kylinbot_logic_controller"
 )
 
 # Per-language clean rules from dependency scanning.
